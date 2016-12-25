@@ -3,6 +3,7 @@ package ru.innopolis.uni.controller;
 import ru.innopolis.uni.model.dao.ProductDao;
 import ru.innopolis.uni.model.dao.impl.ProductDaoImpl;
 import ru.innopolis.uni.model.entityDao.Category;
+import ru.innopolis.uni.model.entityDao.SubCategory;
 
 import javax.servlet.*;
 import java.io.IOException;
@@ -26,7 +27,7 @@ public class ProductConfigurationFilter implements Filter {
 	public void doFilter(ServletRequest request, ServletResponse response,
 			FilterChain chain) throws IOException, ServletException {
 
-		 HashMap<String, List<String>> hashMap=new HashMap<>(1);
+		 HashMap<String, List<SubCategory>> hashMap=new HashMap<>(1);
 		 
 		 ProductDao service = new ProductDaoImpl();
 		 List<Category> categoryList = service.getAllCategories();

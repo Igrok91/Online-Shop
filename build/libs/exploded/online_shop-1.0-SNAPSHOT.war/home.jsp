@@ -3,8 +3,8 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-	<title>OnlineKart</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>OnlineShop</title>
 	<link href="bootstrap/css/shop-homepae.css" rel="stylesheet" />
 	<link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
 	<link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet" />
@@ -30,30 +30,24 @@
 <!--Header-->
 <nav class="navbar navbar-inverse" role="navigation">
 	<div class="navbar-inner">
-		<c:url var="home" value="/home" />
-		<a class="brand" href="${home}">Online Shop</a> <a
-			class="btn btn-navbar" data-toggle="collapse"
-			data-target=".nav-collapse"> <span class="icon-bar"></span> <span
-			class="icon-bar"></span> <span class="icon-bar"></span>
-	</a>
-
+		<c:url var="home" value="/home.jsp" />
+		<a class="brand" href="${home}">Online Shop</a>
 		<div class="nav-collapse collapse">
 			<ul class="nav">
 				<c:forEach var="categories" items="${categories}">
 					<li class="dropdown"><a class="dropdown-toggle"
-											data-toggle="dropdown" href="#"> <c:out value="${categories.key}"/></a>
-					</li>
-
-					<ul class="dropdown-menu">
-						<c:forEach var="subcategories" items="${categories.value}">
-							<c:url var="url" value="/category">
-								<c:param name="subcat" value="${subcategories}" />
-								<c:param name="categ" value="${categories.key}" />
-							</c:url>
-							<li><a tabindex="-1" href="${url}"><c:out
-									value="${subcategories}" /></a></li>
-						</c:forEach>
-					</ul>
+											data-toggle="dropdown" href="#"> <c:out value="${categories.key}" />
+					</a>
+						<ul class="dropdown-menu">
+							<c:forEach var="subcategories" items="${categories.value}">
+								<c:url var="url" value="/category">
+									<c:param name="subcat" value="${subcategories.getCategoryid()}" />
+									<c:param name="categ" value="${categories.key}" />
+								</c:url>
+								<li><a tabindex="-1" href="${url}"><c:out
+										value="${subcategories.getProductCategory()}" /></a></li>
+							</c:forEach>
+						</ul></li>
 				</c:forEach>
 			</ul>
 			<ul class="nav pull-right">
@@ -62,13 +56,14 @@
 																			  class="btn btn-default btn-sm"><i
 						class="icon-shopping-cart icon-red"></i> <c:set var="cartItems"
 																		scope="session" value="${cart.numberOfItems}" /> <span
-						class="headerCartItemsCount"> <c:choose>
+						class="headerCartItemsCount">
+					<c:choose>
 					<c:when test="${empty cartItems}">0
 					</c:when>
 					<c:otherwise>
 						<c:out value="${cartItems}" />
 					</c:otherwise>
-				</c:choose>
+					</c:choose>
 						</span> <span class="headerCartItemsCountWord"><c:out
 						value="${cartItems==1?'item':'items'}" /></span> <b class="caret"></b></span></a>
 					<ul class="dropdown-menu">
@@ -108,7 +103,7 @@
 						<c:param name="productId" value="${products.productId}" />
 					</c:url>
 					<div class="span3">
-						<img src="images/small/${products.productId}.jpg"/> <a href="${url}">${products.productName}</a>
+						 <a href="${url}">${products.productName}</a>
 					</div>
 				</c:forEach>
 			</div>

@@ -31,12 +31,15 @@ public class DispatcherServlet extends HttpServlet {
         // If user requested category page
         if (userPath.equals("/category")) {
             String subCategory = request.getParameter("subcat");
-            String categoryName = request.getParameter("category");
+            String categoryName = request.getParameter("categ");
+            System.out.println(subCategory);
+            System.out.println(categoryName);
             // If the user requested only products
             // of specific category
             if (categoryName != null) {
                 List<Product> productsCategoryList = service.getProductByCategory(categoryName);
                 request.setAttribute("productByCategory", productsCategoryList);
+
             }
 
             // If the user requested only products
@@ -44,6 +47,7 @@ public class DispatcherServlet extends HttpServlet {
             if (subCategory != null) {
                 List<Product> categoryProducts = service
                         .getProductBySubCategory(subCategory);
+                System.out.println(categoryProducts);
                 String cat = service
                         .getCategoryBySubCategory(subCategory);
                 getServletContext().setAttribute("categoryProducts",

@@ -13,7 +13,7 @@ public interface ProductDao {
     List<Product> getAllProducts();
     Product getProductDetails(int idproduct);
     List<Category> getAllCategories();
-    List<String> getSubCategory(Category category);
+    List<SubCategory> getSubCategory(Category category);
     List<Product> getProductBySubCategory(String subCategory);
     List<Product> getProductByCategory(String category);
     String getCategoryBySubCategory(String subCategory);

@@ -19,7 +19,7 @@ import java.util.List;
 public class ProductDaoImpl implements ProductDao {
     private List<Product> products = null;
     private List<Category> categories = null;
-    private List<String> subCategories = null;
+    private List<SubCategory> subCategories = null;
     private String categoryName;
 
     // Method to get all products available
@@ -122,7 +122,7 @@ public class ProductDaoImpl implements ProductDao {
         ResultSet rs = null;
         String sql;
         conn = DBConnection.getConnecton();
-        sql = "select productCategory from category";
+        sql = "select idcategory, productCategory from category";
         categories = new ArrayList<Category>();
 
         try {
@@ -130,6 +130,7 @@ public class ProductDaoImpl implements ProductDao {
             rs = ps.executeQuery();
             while (rs.next()) {
                 Category c = new Category(rs.getString("productCategory"));
+                c.setCategoryid(rs.getInt("idcategory"));
                 categories.add(c);
             }
         } catch (Exception e) {
@@ -151,14 +152,14 @@ public class ProductDaoImpl implements ProductDao {
 
     // Method to get all the available Subcategories under a Category
     @Override
-    public List<String> getSubCategory(Category category)  {
+    public List<SubCategory> getSubCategory(Category category)  {
         Connection conn = null;
         PreparedStatement ps = null;
         ResultSet rs = null;
         String sql;
         conn = DBConnection.getConnecton();
 
-        sql = "SELECT subCategoryName FROM subcategory  where category_id = ? ";
+        sql = "SELECT idsubCategory,subCategoryName FROM subcategory  where category_id = ? ";
 
         try {
             ps = conn.prepareStatement(sql);
@@ -168,7 +169,8 @@ public class ProductDaoImpl implements ProductDao {
             while (rs.next()) {
                 SubCategory subCategory = new SubCategory();
                 subCategory.setProductCategory(rs.getString("subCategoryName"));
-                subCategories.add(subCategory.getProductCategory());
+                subCategory.setCategoryid(rs.getInt("idsubCategory"));
+                subCategories.add(subCategory);
             }
         } catch (Exception e) {
             e.printStackTrace();

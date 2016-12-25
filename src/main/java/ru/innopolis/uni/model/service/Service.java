@@ -7,6 +7,7 @@ import ru.innopolis.uni.model.dao.impl.ProductDaoImpl;
 import ru.innopolis.uni.model.entityDao.Category;
 import ru.innopolis.uni.model.entityDao.Product;
 import ru.innopolis.uni.model.entityDao.SubCategory;
+import sun.security.provider.Sun;
 
 import java.util.List;
 
@@ -50,7 +51,7 @@ public class Service implements ProductDao,CustomerDao{
     }
 
     @Override
-    public List<String> getSubCategory(Category category) {
+    public List<SubCategory> getSubCategory(Category category) {
         return productDao.getSubCategory(category);
     }
 
