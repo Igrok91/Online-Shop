@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -67,7 +67,7 @@
 									Address</label>
 								<div class="controls">
 									<input class="span3" type="text" name="inputEmail"
-										id="inputEmail" placeholder="Enter you email" />
+										id="inEmail" placeholder="Enter you email" />
 								</div>
 							</div>
 							<div class="control-group">

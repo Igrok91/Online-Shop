@@ -169,6 +169,7 @@ public class DispatcherServlet extends HttpServlet {
             String email = request.getParameter("inputEmail");
             String password = request.getParameter("password");
             boolean success = service.registerCustomer(email, password);
+            System.out.println(success);
 
             if (success) {
                 request.setAttribute("regstatus", "success");

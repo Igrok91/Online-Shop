@@ -53,7 +53,7 @@
 							<li><a tabindex="-1" href="${url}"><c:out
 									value="${subcategories}" /></a></li>
 						</c:forEach>
-					</ul></li>
+					</ul>
 				</c:forEach>
 			</ul>
 			<ul class="nav pull-right">
@@ -108,7 +108,7 @@
 						<c:param name="productId" value="${products.productId}" />
 					</c:url>
 					<div class="span3">
-						<img src="images/small/${products.productId}.jpg"/></br> <a href="${url}">${products.productName}</a>
+						<img src="images/small/${products.productId}.jpg"/> <a href="${url}">${products.productName}</a>
 					</div>
 				</c:forEach>
 			</div>

@@ -42,8 +42,9 @@ public class CustomerDaoImpl implements CustomerDao {
                     e.printStackTrace();
                 }
             }
-            return false;
+
         }
+        return false;
     }
 
     // This method is used to verify if the customer is registered
@@ -75,7 +76,8 @@ public class CustomerDaoImpl implements CustomerDao {
                     e.printStackTrace();
                 }
             }
-            return false;
+
         }
+        return false;
     }
 }

@@ -1,7 +1,6 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@ taglib uri="http://onlinekart.com/commonFunctions" prefix="f"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -166,8 +165,7 @@ body {
 			<ul class="nav">
 				<c:forEach var="categories" items="${categories}">
 					<li class="dropdown"><a class="dropdown-toggle"
-						data-toggle="dropdown" href="#"> <c:out
-								value="${categories.key}" /></b>
+						data-toggle="dropdown" href="#"> <c:out value="${categories.key}" />
 					</a>
 
 						<ul class="dropdown-menu">
@@ -263,7 +261,7 @@ body {
 										</h4> </br>
 										<p class="info">
 											Category :
-											<c:out value="${products.category}" />
+											<c:out value="${products.categoryName}" />
 										</p>
 										<p class="info">
 											Manufacturer:
@@ -311,7 +309,7 @@ body {
 								<td><a role="button" href="checkout_unreg.jsp"
 									id="checkoutbutton" class="btn btn-primary">Proceed to
 										Checkout
-										</button></td>
+										</a></td>
 								<td><button id="continueshopping" id="continuebutton"
 										class="btn btn-primary pull-left">Continue Shopping</button>
 									<p id="subtotal_cart" class="lead">Total:</p></td>

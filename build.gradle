@@ -20,4 +20,5 @@ dependencies {
     compile group: 'org.mockito', name: 'mockito-all', version: '1.9.5'
     compile group: 'javax.servlet.jsp', name: 'jsp-api', version: '2.2'
     compile group: 'javax.servlet', name: 'javax.servlet-api', version: '3.1.0'
+    compile group: 'javax.servlet', name: 'jstl', version: '1.2'
 }

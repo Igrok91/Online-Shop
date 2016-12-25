@@ -1,7 +1,6 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@ taglib uri="http://onlinekart.com/commonFunctions" prefix="f"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -44,8 +43,7 @@ body {
 			<ul class="nav">
 				<c:forEach var="categories" items="${categories}">
 					<li class="dropdown"><a class="dropdown-toggle"
-						data-toggle="dropdown" href="#"> <c:out
-								value="${categories.key}" /></b>
+						data-toggle="dropdown" href="#"> <c:out value="${categories.key}" />
 					</a>
 
 						<ul class="dropdown-menu">
@@ -131,16 +129,10 @@ body {
 				</div>
 
 				<div class="modal-body">
-					<c:choose>
-						<c:when test="${f:checkProductInCart(pageContext)}">
-							<p class="text-warning">Product - ${product.productName} is
-								already added to your Shopping Cart.</p>
-						</c:when>
-						<c:otherwise>
+
 							<p class="text-success">Product - ${product.productName} will
 								be added to your Shopping Cart.</p>
-						</c:otherwise>
-					</c:choose>
+
 
 					<hr />
 					<div>
@@ -164,16 +156,10 @@ body {
 
 					<div class="modal-footer">
 						<form method="post" action="addProducts" class="addCartForm">
-							<c:choose>
-								<c:when test="${f:checkProductInCart(pageContext)}">
-									<button class="btn btn-primary pull-left" id="disabledbutton"
-										onload="disableButton">In Cart!</button>
-								</c:when>
-								<c:otherwise>
+
 									<button class="btn btn-primary pull-left" id="addtocart">Add
 										to Cart</button>
-								</c:otherwise>
-							</c:choose>
+
 
 							<a href="#" class="btn" data-dismiss="modal">Continue
 								Shopping</a> <a id="yesbutton" href="#" class="btn btn-primary">Place
