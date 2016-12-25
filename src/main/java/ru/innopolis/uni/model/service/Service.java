@@ -50,7 +50,7 @@ public class Service implements ProductDao,CustomerDao{
     }
 
     @Override
-    public List<SubCategory> getSubCategory(Category category) {
+    public List<String> getSubCategory(Category category) {
         return productDao.getSubCategory(category);
     }
 

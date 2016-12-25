@@ -19,7 +19,7 @@ import java.util.List;
 public class ProductDaoImpl implements ProductDao {
     private List<Product> products = null;
     private List<Category> categories = null;
-    private List<SubCategory> subCategories = null;
+    private List<String> subCategories = null;
     private String categoryName;
 
     // Method to get all products available
@@ -151,7 +151,7 @@ public class ProductDaoImpl implements ProductDao {
 
     // Method to get all the available Subcategories under a Category
     @Override
-    public List<SubCategory> getSubCategory(Category category)  {
+    public List<String> getSubCategory(Category category)  {
         Connection conn = null;
         PreparedStatement ps = null;
         ResultSet rs = null;
@@ -168,7 +168,7 @@ public class ProductDaoImpl implements ProductDao {
             while (rs.next()) {
                 SubCategory subCategory = new SubCategory();
                 subCategory.setProductCategory(rs.getString("subCategoryName"));
-                subCategories.add(subCategory);
+                subCategories.add(subCategory.getProductCategory());
             }
         } catch (Exception e) {
             e.printStackTrace();

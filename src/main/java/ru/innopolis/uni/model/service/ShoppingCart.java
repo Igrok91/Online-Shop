@@ -37,7 +37,7 @@ public class ShoppingCart {
     }
 
     // Remove items from the shopping cart
-    public synchronized void remove(Integer productID) {
+    public synchronized  void remove(Integer productID) {
         if (itemsMap.containsKey(productID)) {
             ShoppingCartItem scItem = itemsMap.get(productID);
             if (scItem.getQuantity() <= 1) {
@@ -90,7 +90,7 @@ public class ShoppingCart {
 
     // Checks whether a particular product
     // is already present in the cart
-    public static boolean checkProductInCart(PageContext pageContext) {
+    public static Boolean checkProductInCart(PageContext pageContext) {
         int productID = (int) pageContext.findAttribute("productID");
         if (itemsMap == null)
             itemsMap = new HashMap<>();
