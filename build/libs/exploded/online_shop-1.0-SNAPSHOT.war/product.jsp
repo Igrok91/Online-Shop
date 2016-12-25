@@ -126,7 +126,6 @@ body {
 				</div>
 
 				<div class="modal-body">
-
 							<p class="text-success">Product - ${product.productName} will
 								be added to your Shopping Cart.</p>
 					<hr />
@@ -135,14 +134,12 @@ body {
 							<thead>
 								<tr>
 									<td>Product</td>
-									<td>Quantity</td>
 									<td>Price</td>
 								</tr>
 							</thead>
 							<tbody>
 								<tr class="active">
-									<td>${product.productName} /></td>
-									<td><input class="input-mini" type="text" placeholder="1"></td>
+									<td>${product.productName}</td>
 									<td class="price">${product.productPrice}</td>
 								</tr>
 							</tbody>
@@ -205,30 +202,7 @@ body {
 			return o;
 		}
 
-		// This script is used to update the price
-		// based on the provided quantity
-		$(function() {
-			$('input.input-mini').keyup(function(event) {
-				var quantity = $('input.input-mini').val();
-				var totalPrice = quantity * productPrice;
 
-				var subTotal = totalPrice + ".0";
-				if ($.isNumeric(quantity)) {
-					$('td.price').text(subTotal);
-				}
-			});
-		});
-		// This script is used to update the price
-		// when the quantity field is empty
-		$(function() {
-			$('input.input-mini').focusout(function() {
-				var quant = $('input.input-mini').val();
-				if (quant == '') {
-					var totalPrice = productPrice;
-					$('td.price').text(totalPrice);
-				}
-			});
-		});
 		var form = $('addCartForm');
 		var itemRequest = serializeObject(form);
 		var cartItems = "${cart.numberOfItems}";

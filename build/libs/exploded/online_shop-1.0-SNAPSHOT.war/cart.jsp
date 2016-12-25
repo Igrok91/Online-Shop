@@ -155,27 +155,21 @@ body {
 	<!--Header-->
 	<header> <nav class="navbar navbar-inverse" role="navigation">
 	<div class="navbar-inner">
-		<a class="brand" href="home.jsp">OnlineKart</a> <a
-			class="btn btn-navbar" data-toggle="collapse"
-			data-target=".nav-collapse"> <span class="icon-bar"></span> <span
-			class="icon-bar"></span> <span class="icon-bar"></span>
-		</a>
-
+		<a class="brand" href="home.jsp">Online Shop</a>
 		<div class="nav-collapse collapse">
 			<ul class="nav">
 				<c:forEach var="categories" items="${categories}">
 					<li class="dropdown"><a class="dropdown-toggle"
-						data-toggle="dropdown" href="#"> <c:out value="${categories.key}" />
+											data-toggle="dropdown" href="#"> <c:out value="${categories.key}" />
 					</a>
-
 						<ul class="dropdown-menu">
 							<c:forEach var="subcategories" items="${categories.value}">
 								<c:url var="url" value="/category">
-									<c:param name="subcat" value="${subcategories}" />
+									<c:param name="subcat" value="${subcategories.categoryid}" />
 									<c:param name="categ" value="${categories.key}" />
 								</c:url>
 								<li><a tabindex="-1" href="${url}"><c:out
-											value="${subcategories}" /></a></li>
+										value="${subcategories.productCategory}" /></a></li>
 							</c:forEach>
 						</ul></li>
 				</c:forEach>
@@ -205,7 +199,8 @@ body {
 					<ul class="dropdown-menu">
 						<li><a tabindex="-1" href="/">Account</a></li>
 						<li><a tabindex="-1" href="/">Orders</a></li>
-						<li><a tabindex="-1" href="/">Sign out</a></li>
+						<c:url var="logout" value="/logout" />
+						<li><a tabindex="-1" href="${logout}">Sign out</a></li>
 					</ul></li>
 			</ul>
 		</div>
@@ -252,16 +247,17 @@ body {
 						<tbody>
 							<c:forEach var="cart_products" items="${cart.items}">
 								<c:set var="products" value="${cart_products.product}" />
+
 								<tr>
 									<td class="cart_product"><a href=""><img alt="${products.productName}"
-											src="images/small/${products.productId}.jpg" /></a></td>
+																			 src="images/small/${products.productId}.jpg" /></a></td>
 									<td class="cart_description">
 										<h4>
 											<a href=""><c:out value="${products.productName}" /></a>
 										</h4> </br>
 										<p class="info">
 											Category :
-											<c:out value="${products.categoryName}" />
+											<c:out value="${products.categoryName.categoryid}" />
 										</p>
 										<p class="info">
 											Manufacturer:
@@ -278,13 +274,7 @@ body {
 													value="<c:out value="${cart_products.quantity}"/>" />
 												<button class="update btn btn-primary">Update</button>
 											</form>
-										</div> <!--  										<div class="form-horizontal">
-												<button class="increment btn btn-primary">+</button>
-												<input class="input-mini" name="mini" type="text" value="1">
-												<button class="decrement btn btn-primary">-</button>
-												<button class="update btn btn-primary">Update</button>
 										</div>
--->
 									</td>
 									<td class="cart_total">
 										<p class="product_tot lead">
@@ -310,7 +300,7 @@ body {
 									id="checkoutbutton" class="btn btn-primary">Proceed to
 										Checkout
 										</a></td>
-								<td><button id="continueshopping" id="continuebutton"
+								<td><button id="continueshopping" id="continuebutton" href="home.jsp"
 										class="btn btn-primary pull-left">Continue Shopping</button>
 									<p id="subtotal_cart" class="lead">Total:</p></td>
 								<td class="cart_sub_total">
