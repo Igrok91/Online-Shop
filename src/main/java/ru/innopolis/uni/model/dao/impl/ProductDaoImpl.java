@@ -86,8 +86,10 @@ public class ProductDaoImpl implements ProductDao {
             ps.setInt(1, idproduct);
             rs = ps.executeQuery();
             while (rs.next()) {
-                cat.setProductCategory(rs.getString(4));
-                sub.setProductCategory(rs.getString(5));
+                cat.setCategoryid(rs.getInt(4));
+                sub.setCategoryid(rs.getInt(5));
+               // cat.setProductCategory(rs.getString(4));
+              //  sub.setProductCategory(rs.getString(5));
                 p.setProductId(idproduct);
                 p.setProductName(rs.getString(1));
                 p.setProductPrice(rs.getDouble(2));
@@ -299,4 +301,6 @@ public class ProductDaoImpl implements ProductDao {
         }
         return categoryName;
     }
+
+
 }

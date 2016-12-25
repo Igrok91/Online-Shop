@@ -92,9 +92,9 @@ public class DispatcherServlet extends HttpServlet {
             hs.setAttribute("productID", productId);
             // Set Product Category and SubCategory in the Context Attribute
             getServletContext().setAttribute("productCategory",
-                    product.getCategoryName());
+                    product.getCategoryName().getCategoryid());
             getServletContext().setAttribute("productSubCategory",
-                    product.getSubCategory());
+                    product.getSubCategory().getCategoryid());
         }
         // If user request Logout
         else if (userPath.equals("/logout")){

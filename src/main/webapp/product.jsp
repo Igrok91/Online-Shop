@@ -33,27 +33,24 @@ body {
 	<!--Header-->
 	<header> <nav class="navbar navbar-inverse" role="navigation">
 	<div class="navbar-inner">
-		<a class="brand" href="home.jsp">OnlineKart</a> <a
-			class="btn btn-navbar" data-toggle="collapse"
-			data-target=".nav-collapse"> <span class="icon-bar"></span> <span
-			class="icon-bar"></span> <span class="icon-bar"></span>
-		</a>
+		<a class="brand" href="home.jsp">Online Shop</a>
 
 		<div class="nav-collapse collapse">
 			<ul class="nav">
 				<c:forEach var="categories" items="${categories}">
 					<li class="dropdown"><a class="dropdown-toggle"
-						data-toggle="dropdown" href="#"> <c:out value="${categories.key}" />
+											data-toggle="dropdown" href="#"> <c:out value="${categories.key}" />
 					</a>
 
 						<ul class="dropdown-menu">
 							<c:forEach var="subcategories" items="${categories.value}">
 								<c:url var="url" value="/category">
-									<c:param name="subcat" value="${subcategories}" />
+
+									<c:param name="subcat" value="${subcategories.categoryid}" />
 									<c:param name="categ" value="${categories.key}" />
 								</c:url>
 								<li><a tabindex="-1" href="${url}"><c:out
-											value="${subcategories}" /></a></li>
+										value="${subcategories.productCategory}" /></a></li>
 							</c:forEach>
 						</ul></li>
 				</c:forEach>
@@ -129,11 +126,8 @@ body {
 				</div>
 
 				<div class="modal-body">
-
 							<p class="text-success">Product - ${product.productName} will
 								be added to your Shopping Cart.</p>
-
-
 					<hr />
 					<div>
 						<table class="table table-condensed">
@@ -146,7 +140,7 @@ body {
 							</thead>
 							<tbody>
 								<tr class="active">
-									<td><img src="images/small/${productID}.jpg" /></td>
+									<td>${product.productName} /></td>
 									<td><input class="input-mini" type="text" placeholder="1"></td>
 									<td class="price">${product.productPrice}</td>
 								</tr>
@@ -156,52 +150,13 @@ body {
 
 					<div class="modal-footer">
 						<form method="post" action="addProducts" class="addCartForm">
-
 									<button class="btn btn-primary pull-left" id="addtocart">Add
 										to Cart</button>
-
-
 							<a href="#" class="btn" data-dismiss="modal">Continue
-								Shopping</a> <a id="yesbutton" href="#" class="btn btn-primary">Place
+								Shopping</a>
+							<a id="yesbutton" href="/checkout" class="btn btn-primary">Place
 								Order</a>
 						</form>
-					</div>
-				</div>
-			</div>
-			<div class="span6">
-				<img alt="${products.productName}"
-					src="images/large/${productID}.jpg" />
-				<div class="carousel-bounding-box">
-					<div id="slidingcarousel" class="carousel slide"
-						style="width: px; margin: 0 auto">
-						<div class="carousel-inner">
-							<div class="carousel-inner">
-								<div class="active item" data-slide-number="0">
-									<img class="img-rounded img-responsive"
-										src="http://lorempixel.com/120/100">
-								</div>
-								<div class="item" data-slide-number="1">
-									<img class="img-rounded img-responsive"
-										src="http://lorempixel.com/120/100/technics/1">
-								</div>
-								<div class="item" data-slide-number="2">
-									<img class="img-rounded img-responsive"
-										src="http://lorempixel.com/120/100/business/1">
-								</div>
-								<div class="item" data-slide-number="3">
-									<img class="img-rounded img-responsive"
-										src="http://lorempixel.com/120/100/city">
-								</div>
-								<div class="item" data-slide-number="4">
-									<img class="img-rounded img-responsive"
-										src="http://lorempixel.com/120/100/city/1">
-								</div>
-								<div class="item" data-slide-number="5">
-									<img class="img-rounded img-responsive"
-										src="http://lorempixel.com/120/100">
-								</div>
-							</div>
-						</div>
 					</div>
 				</div>
 			</div>
