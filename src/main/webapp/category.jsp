@@ -33,31 +33,50 @@
 							<c:forEach var="subcategories" items="${categories.value}">
 								<c:url var="url" value="/category">
 
-									<c:param name="subcat" value="${subcategories.getCategoryid()}" />
+									<c:param name="subcat" value="${subcategories.categoryid}" />
 									<c:param name="categ" value="${categories.key}" />
 								</c:url>
 								<li><a tabindex="-1" href="${url}"><c:out
-											value="${subcategories.getProductCategory()}" /></a></li>
+											value="${subcategories.productCategory}" /></a></li>
 							</c:forEach>
 						</ul></li>
 				</c:forEach>
 			</ul>
 			<ul class="nav pull-right">
-				<li class="dropdown"><a class="dropdown-toggle"
-					data-toggle="dropdown" href="#">X Items <b class="caret"></b>
-				</a>
+				<li class="dropdown"><a id="cartitem" class="dropdown-toggle"
+										data-toggle="dropdown" href="#"><span id="itemcount"
+																			  class="btn btn-default btn-sm"><i
+						class="icon-shopping-cart icon-red"></i> <c:set var="cartItems"
+																		scope="session" value="${cart.numberOfItems}" /> <span
+						class="headerCartItemsCount"> <c:choose>
+					<c:when test="${empty cartItems}">0
+					</c:when>
+					<c:otherwise>
+						<c:out value="${cartItems}" />
+					</c:otherwise>
+				</c:choose>
+						</span> <span class="headerCartItemsCountWord"><c:out
+						value="${cartItems==1?'item':'items'}" /></span> <b class="caret"></b></span></a>
 					<ul class="dropdown-menu">
-						<li><a tabindex="-1" href="/">View Cart</a></li>
-						<li><a tabindex="-1" href="/">Checkout Cart</a></li>
-						<li><a tabindex="-1" href="/">Clear Cart</a></li>
+						<li><a tabindex="-1" href="cart">View Cart</a></li>
+						<li><a tabindex="-1" href="checkout">Checkout Cart</a></li>
 					</ul></li>
 				<li class="dropdown"><a class="dropdown-toggle"
-					data-toggle="dropdown" href="#">Welcome User <b class="caret"></b>
-				</a>
+										data-toggle="dropdown" href="#"><span id="welcome"
+																			  class="btn btn-default btn-sm"> <c:choose>
+					<c:when test="${empty email}">
+						<c:out value="Hello Guest" />
+					</c:when>
+					<c:otherwise>
+						<c:out value="Hello ${email}" />
+					</c:otherwise>
+				</c:choose>
+					</span></a>
 					<ul class="dropdown-menu">
 						<li><a tabindex="-1" href="/">Account</a></li>
 						<li><a tabindex="-1" href="/">Orders</a></li>
-						<li><a tabindex="-1" href="/">Sign out</a></li>
+						c:url var="logout" value="/logout" />
+						<li><a tabindex="-1" href="${logout}">Sign out</a></li>
 					</ul></li>
 			</ul>
 		</div>
@@ -81,7 +100,7 @@
 								<c:param name="productId" value="${products.productId}" />
 							</c:url>
 							<div class="span3">
-								<img src="images/meluha-small.jpg" /> </br> <a href="${url}">${products.productName}</a>
+								 </br> <a href="${url}">${products.productName}</a>
 							</div>
 						</c:forEach>
 					</c:when>

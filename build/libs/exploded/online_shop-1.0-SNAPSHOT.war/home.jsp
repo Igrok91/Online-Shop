@@ -41,11 +41,11 @@
 						<ul class="dropdown-menu">
 							<c:forEach var="subcategories" items="${categories.value}">
 								<c:url var="url" value="/category">
-									<c:param name="subcat" value="${subcategories.getCategoryid()}" />
+									<c:param name="subcat" value="${subcategories.categoryid}" />
 									<c:param name="categ" value="${categories.key}" />
 								</c:url>
 								<li><a tabindex="-1" href="${url}"><c:out
-										value="${subcategories.getProductCategory()}" /></a></li>
+										value="${subcategories.productCategory}" /></a></li>
 							</c:forEach>
 						</ul></li>
 				</c:forEach>
