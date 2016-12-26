@@ -2,7 +2,53 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1de07ef9-661b-4573-b6d9-232399446002" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ru/innopolis/uni/Test.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/Main.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/images/AEx.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/images/bag_icon.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/images/cart.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/images/discover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/images/home.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/images/large/100.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/images/large/101.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/images/large/102.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/images/large/103.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/images/large/104.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/images/large/105.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/images/large/106.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/images/large/107.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/images/large/108.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/images/large/109.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/images/large/110.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/images/large/111.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/images/mastercard.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/images/payment.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/images/paypal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/images/product.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/images/small/100.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/images/small/101.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/images/small/102.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/images/small/103.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/images/small/104.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/images/small/105.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/images/small/106.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/images/small/107.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/images/small/108.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/images/small/109.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/images/small/110.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/images/small/111.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/images/visa.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/Gradle___order_products___online_shop_1_0_SNAPSHOT_war__exploded_.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/Gradle___order_products___online_shop_1_0_SNAPSHOT_war__exploded_.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/libs/exploded/online_shop-1.0-SNAPSHOT.war/checkout_unreg.jsp" afterPath="$PROJECT_DIR$/build/libs/exploded/online_shop-1.0-SNAPSHOT.war/checkout_unreg.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/innopolis/uni/controller/DispatcherServlet.java" afterPath="$PROJECT_DIR$/src/main/java/ru/innopolis/uni/controller/DispatcherServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/cart.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/cart.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/category.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/category.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/checkout_unreg.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/checkout_unreg.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/final_checkout.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/final_checkout.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/login-register.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/login-register.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/orderconfirm.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/orderconfirm.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -50,92 +96,7 @@
     <favorites_list name="online_shop" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DispatcherServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/controller/DispatcherServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2312">
-              <caret line="147" column="0" lean-forward="false" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProductDaoImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/dao/impl/ProductDaoImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1326">
-              <caret line="89" column="27" lean-forward="false" selection-start-line="89" selection-start-column="27" selection-end-line="89" selection-end-column="27" />
-              <folding>
-                <marker date="1482673657956" expanded="true" signature="1013:1035" ph="select * fro... products" />
-                <marker date="1482673657956" expanded="true" signature="2550:2691" ph="select produ... products" />
-                <marker date="1482673657956" expanded="true" signature="4111:4159" ph="select produ... category" />
-                <marker date="1482673657956" expanded="true" signature="5255:5331" ph="SELECT subCa... subcategory" />
-                <marker date="1482673657956" expanded="true" signature="6579:6721" ph="select idpro... products" />
-                <marker date="1482673657956" expanded="true" signature="7947:8090" ph="select idpro... products" />
-                <marker date="1482673657956" expanded="true" signature="9311:9370" ph="select categ... subcategory" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Category.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/entityDao/Category.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="26" lean-forward="false" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="26" />
-              <folding>
-                <element signature="e#665#666#0" expanded="true" />
-                <element signature="e#703#704#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/home.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="96" column="0" lean-forward="true" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ShoppingCart.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/service/ShoppingCart.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="14" column="42" lean-forward="false" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ShoppingCartItem.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/service/ShoppingCartItem.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="15" lean-forward="false" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Service.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/service/Service.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="53" column="27" lean-forward="false" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
-              <folding>
-                <element signature="e#1488#1489#0" expanded="true" />
-                <element signature="e#1546#1547#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -327,7 +288,7 @@
       <map>
         <entry key="$PROJECT_DIR$/../Chat-master" value="1482331474093" />
         <entry key="$PROJECT_DIR$/../firstWebProject" value="1482140590470" />
-        <entry key="$PROJECT_DIR$" value="2965300843880" />
+        <entry key="$PROJECT_DIR$" value="2965334155506" />
         <entry key="$PROJECT_DIR$/../ru.innopolis.uni.course3.task.v2" value="1481981769728" />
       </map>
     </option>
@@ -440,25 +401,25 @@
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/commonFunctions.tld" />
-        <option value="$PROJECT_DIR$/src/main/webapp/login-register.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/orderconfirm.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/login.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/dao/impl/CustomerDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/checkout_unreg.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/final_checkout.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/subcategory.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/ru/innopolis/uni/controller/ProductConfigurationFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/dao/ProductDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/service/Service.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/entityDao/SubCategory.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/home.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/category.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/innopolis/uni/controller/DispatcherServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/dao/impl/ProductDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/product.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/entityDao/Category.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/home.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/checkout_unreg.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/cart.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/category.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/final_checkout.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/orderconfirm.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/innopolis/uni/controller/DispatcherServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/login.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/login-register.jsp" />
       </list>
     </option>
   </component>
@@ -495,7 +456,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -531,10 +492,6 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -580,7 +537,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemId" value="bootstrap" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -600,12 +557,102 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
               <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="online_shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="online_shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uni" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="online_shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="online_shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uni" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="database" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="online_shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="online_shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uni" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -614,22 +661,22 @@
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.45454544" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/taglibs-standard-jstlel-1.2.5.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\innopolis\IdeaProjects\online_shop\src\main\webapp" />
-      <recent name="C:\Users\innopolis\IdeaProjects\online_shop\src\main\resources" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="ru.innopolis.uni.controller" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\innopolis\IdeaProjects\online_shop\src\main\webapp\WEB-INF" />
       <recent name="C:\Users\innopolis\IdeaProjects\online_shop\src\main\webapp" />
       <recent name="C:\Users\innopolis\IdeaProjects\online_shop\src\main\java" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ru.innopolis.uni.controller" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\innopolis\IdeaProjects\online_shop\src\main\webapp" />
+      <recent name="C:\Users\innopolis\IdeaProjects\online_shop\src\main\resources" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.tomcat">
@@ -1157,11 +1204,16 @@
       <updated>1482646193522</updated>
       <workItem from="1482646200960" duration="28530000" />
       <workItem from="1482685643565" duration="1559000" />
+      <workItem from="1482688087665" duration="431000" />
+      <workItem from="1482688627496" duration="231000" />
+      <workItem from="1482745071069" duration="102000" />
+      <workItem from="1482746883626" duration="2861000" />
+      <workItem from="1482753547648" duration="6266000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30089000" />
+    <option name="totallyTimeSpent" value="39980000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1370" height="735" extended-state="0" />
@@ -1187,11 +1239,11 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963072" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963072" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22895126" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.105613" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -1210,13 +1262,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/webapp/cart.jsp</url>
-          <line>97</line>
-          <properties />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="1" />
     </breakpoint-manager>
     <watches-manager />
@@ -1226,228 +1271,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/controller/DispatcherServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2312">
-          <caret line="147" column="0" lean-forward="false" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/dao/impl/ProductDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1513">
-          <caret line="89" column="27" lean-forward="false" selection-start-line="89" selection-start-column="27" selection-end-line="89" selection-end-column="27" />
-          <folding>
-            <marker date="1482673657956" expanded="true" signature="1013:1035" ph="select * fro... products" />
-            <marker date="1482673657956" expanded="true" signature="2550:2691" ph="select produ... products" />
-            <marker date="1482673657956" expanded="true" signature="4111:4159" ph="select produ... category" />
-            <marker date="1482673657956" expanded="true" signature="5255:5331" ph="SELECT subCa... subcategory" />
-            <marker date="1482673657956" expanded="true" signature="6579:6721" ph="select idpro... products" />
-            <marker date="1482673657956" expanded="true" signature="7947:8090" ph="select idpro... products" />
-            <marker date="1482673657956" expanded="true" signature="9311:9370" ph="select categ... subcategory" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/entityDao/Category.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="26" lean-forward="false" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="26" />
-          <folding>
-            <element signature="e#665#666#0" expanded="true" />
-            <element signature="e#703#704#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/home.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1462">
-          <caret line="86" column="83" lean-forward="false" selection-start-line="85" selection-start-column="28" selection-end-line="86" selection-end-column="83" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/cart.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/entityDao/Product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="28" lean-forward="false" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-          <folding>
-            <element signature="e#2345#2346#0" expanded="true" />
-            <element signature="e#2380#2381#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/service/ShoppingCart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="42" lean-forward="false" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/service/ShoppingCartItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="15" lean-forward="false" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/service/Service.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="53" column="27" lean-forward="false" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
-          <folding>
-            <element signature="e#1488#1489#0" expanded="true" />
-            <element signature="e#1546#1547#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/entityDao/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="1" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Downloads/taglibs-standard-impl-1.2.5.jar!/META-INF/c.tld">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="574" column="8" lean-forward="false" selection-start-line="574" selection-start-column="8" selection-end-line="574" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/idea.jar!/resources/html5-schema/html5/common.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="124" column="18" lean-forward="false" selection-start-line="124" selection-start-column="18" selection-end-line="124" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="20" column="71" lean-forward="true" selection-start-line="20" selection-start-column="71" selection-end-line="20" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/commonFunctions.tld" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/orderconfirm.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="23" lean-forward="false" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/login-register.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="90" column="42" lean-forward="false" selection-start-line="90" selection-start-column="42" selection-end-line="90" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/dao/CustomerDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="12" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="86" column="46" lean-forward="false" selection-start-line="86" selection-start-column="46" selection-end-line="86" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/dao/impl/CustomerDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="773">
-          <caret line="80" column="21" lean-forward="false" selection-start-line="80" selection-start-column="21" selection-end-line="80" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/checkout_unreg.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-332">
-          <caret line="107" column="81" lean-forward="false" selection-start-line="107" selection-start-column="81" selection-end-line="107" selection-end-column="81" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/final_checkout.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1190">
-          <caret line="152" column="76" lean-forward="false" selection-start-line="152" selection-start-column="76" selection-end-line="152" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/bootstrap/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3570">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/bootstrap/img/glyphicons-halflings-white.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/bootstrap/img/glyphicons-halflings.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/subcategory.jsp" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="31" lean-forward="false" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/entityDao/SubCategory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="34" lean-forward="false" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/dao/ProductDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="15" column="20" lean-forward="false" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/controller/ProductConfigurationFilter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-26">
@@ -1455,29 +1278,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/product.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="141" column="62" lean-forward="false" selection-start-line="141" selection-start-column="62" selection-end-line="141" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/category.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="39" column="17" lean-forward="false" selection-start-line="21" selection-start-column="12" selection-end-line="39" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/service/Service.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
           <caret line="53" column="27" lean-forward="false" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
           <folding>
-            <element signature="e#1488#1489#0" expanded="true" />
-            <element signature="e#1546#1547#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#990#991#0" expanded="false" />
+            <element signature="e#1051#1052#0" expanded="false" />
+            <element signature="e#1111#1112#0" expanded="false" />
+            <element signature="e#1161#1162#0" expanded="false" />
+            <element signature="e#1231#1232#0" expanded="false" />
+            <element signature="e#1293#1294#0" expanded="false" />
+            <element signature="e#1356#1357#0" expanded="false" />
+            <element signature="e#1408#1409#0" expanded="false" />
+            <element signature="e#1488#1489#0" expanded="false" />
+            <element signature="e#1546#1547#0" expanded="false" />
+            <element signature="e#1935#1936#0" expanded="false" />
+            <element signature="e#1999#2000#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1489,26 +1307,124 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/entityDao/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="28" lean-forward="false" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/dao/impl/ProductDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1326">
           <caret line="89" column="27" lean-forward="false" selection-start-line="89" selection-start-column="27" selection-end-line="89" selection-end-column="27" />
           <folding>
-            <marker date="1482673657956" expanded="true" signature="1013:1035" ph="select * fro... products" />
-            <marker date="1482673657956" expanded="true" signature="2550:2691" ph="select produ... products" />
-            <marker date="1482673657956" expanded="true" signature="4111:4159" ph="select produ... category" />
-            <marker date="1482673657956" expanded="true" signature="5255:5331" ph="SELECT subCa... subcategory" />
-            <marker date="1482673657956" expanded="true" signature="6579:6721" ph="select idpro... products" />
-            <marker date="1482673657956" expanded="true" signature="7947:8090" ph="select idpro... products" />
-            <marker date="1482673657956" expanded="true" signature="9311:9370" ph="select categ... subcategory" />
+            <element signature="imports" expanded="false" />
+            <marker date="1482687959471" expanded="true" signature="1013:1035" ph="select * fro... products" />
+            <marker date="1482687959471" expanded="true" signature="2550:2691" ph="select produ... products" />
+            <marker date="1482687959471" expanded="true" signature="4111:4159" ph="select produ... category" />
+            <marker date="1482687959471" expanded="true" signature="5255:5331" ph="SELECT subCa... subcategory" />
+            <marker date="1482687959471" expanded="true" signature="6579:6721" ph="select idpro... products" />
+            <marker date="1482687959471" expanded="true" signature="7947:8090" ph="select idpro... products" />
+            <marker date="1482687959471" expanded="true" signature="9311:9370" ph="select categ... subcategory" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/controller/DispatcherServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2312">
-          <caret line="147" column="0" lean-forward="false" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="0" />
+        <state relative-caret-position="187">
+          <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/service/ShoppingCartItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="31" lean-forward="false" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/service/ShoppingCart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="58" column="37" lean-forward="false" selection-start-line="58" selection-start-column="37" selection-end-line="58" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/small/101.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/small/104.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/small/108.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/small/110.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/large/100.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/home.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/payment.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/product.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/bootstrap/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-867">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/bootstrap/img/glyphicons-halflings.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/bootstrap/img/glyphicons-halflings-white.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/category.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="79" column="10" lean-forward="true" selection-start-line="79" selection-start-column="10" selection-end-line="79" selection-end-column="10" />
           <folding />
         </state>
       </provider>
@@ -1517,52 +1433,187 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="26" lean-forward="false" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="26" />
-          <folding>
-            <element signature="e#665#666#0" expanded="true" />
-            <element signature="e#703#704#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/service/ShoppingCartItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="15" lean-forward="false" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/service/ShoppingCart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="14" column="42" lean-forward="false" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
-          <folding />
-        </state>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/small/100.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/entityDao/Product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="28" lean-forward="false" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-          <folding>
-            <element signature="e#2345#2346#0" expanded="true" />
-            <element signature="e#2380#2381#0" expanded="true" />
-          </folding>
-        </state>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/small/103.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/small/106.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/small/109.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/small/107.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/small/111.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/AEx.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/bag_icon.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/large/101.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/large/104.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/large/107.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/large/108.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/large/110.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/visa.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/paypal.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/mastercard.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/discover.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/cart.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/cart.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-34">
-          <caret line="237" column="4" lean-forward="false" selection-start-line="237" selection-start-column="4" selection-end-line="237" selection-end-column="4" />
+        <state relative-caret-position="221">
+          <caret line="227" column="48" lean-forward="false" selection-start-line="227" selection-start-column="48" selection-end-line="227" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/product.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="141" column="62" lean-forward="false" selection-start-line="141" selection-start-column="62" selection-end-line="141" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/checkout_unreg.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="67" column="44" lean-forward="true" selection-start-line="67" selection-start-column="44" selection-end-line="67" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/dao/CustomerDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/dao/impl/CustomerDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <marker date="1482687959404" expanded="true" signature="645:690" ph="insert into user... " />
+            <marker date="1482687959404" expanded="true" signature="1520:1572" ph="select iduse... user" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/final_checkout.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3638">
+          <caret line="253" column="35" lean-forward="false" selection-start-line="253" selection-start-column="35" selection-end-line="253" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/login-register.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="101" column="80" lean-forward="true" selection-start-line="101" selection-start-column="80" selection-end-line="101" selection-end-column="80" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/home.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="96" column="0" lean-forward="true" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+        <state relative-caret-position="612">
+          <caret line="96" column="0" lean-forward="false" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/orderconfirm.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-68">
+          <caret line="35" column="52" lean-forward="false" selection-start-line="35" selection-start-column="52" selection-end-line="35" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="73" column="29" lean-forward="false" selection-start-line="73" selection-start-column="29" selection-end-line="73" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/controller/DispatcherServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="178" column="15" lean-forward="false" selection-start-line="178" selection-start-column="15" selection-end-line="178" selection-end-column="15" />
           <folding />
         </state>
       </provider>

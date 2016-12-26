@@ -268,8 +268,8 @@ body {
 										<div class="form-horizontal">
 											<form action="update" method="POST">
 												<input type="hidden" name="productid"
-													value="<c:out value="${products.productId}"/>" /><input
-													type="number" name="quantity" size="2" maxlength="2"
+													value="<c:out value="${products.productId}"/>" />
+												<input type="number" name="quantity" size="2" maxlength="2"
 													class="input-mini" max="10" min="1"
 													value="<c:out value="${cart_products.quantity}"/>" />
 												<button class="update btn btn-primary">Update</button>

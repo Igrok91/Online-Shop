@@ -71,7 +71,7 @@
 					<ul class="dropdown-menu">
 						<li><a tabindex="-1" href="/">Account</a></li>
 						<li><a tabindex="-1" href="/">Orders</a></li>
-						c:url var="logout" value="/logout" />
+						<c:url var="logout" value="/logout" />
 						<li><a tabindex="-1" href="${logout}">Sign out</a></li>
 					</ul></li>
 			</ul>

@@ -176,7 +176,9 @@ public class DispatcherServlet extends HttpServlet {
             System.out.println(success);
 
             if (success) {
-                request.setAttribute("regstatus", "success");
+                HttpSession hs = request.getSession();
+                hs.setAttribute("regstatus", 1);
+                //request.setAttribute("regstatus", 1);
                 response.sendRedirect("login.jsp?regStatus=Success");
             } else {
                 response.sendRedirect("checkout_unreg.jsp?regStatus=Fail");
@@ -193,7 +195,7 @@ public class DispatcherServlet extends HttpServlet {
                 hs.setAttribute("email", email);
                 response.sendRedirect("final_checkout.jsp");
             } else {
-                response.sendRedirect("login.jsp?regStatus=fail");
+                response.sendRedirect("login.jsp?regStatus=Fail");
             }
 
         }

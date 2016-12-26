@@ -33,11 +33,7 @@
 	<!--Header-->
 	<header> <nav class="navbar navbar-inverse" role="navigation">
 	<div class="navbar-inner">
-		<a class="brand" href="home.jsp">OnlineKart</a> <a
-			class="btn btn-navbar" data-toggle="collapse"
-			data-target=".nav-collapse"> <span class="icon-bar"></span> <span
-			class="icon-bar"></span> <span class="icon-bar"></span>
-		</a>
+		<a class="brand" href="home.jsp">Online Shop</a>
 	</div>
 	</nav> </header>
 
@@ -105,7 +101,7 @@
 										</h4>
 										<p class="info">
 											Category:
-											<c:out value="${products.categoryName}" />
+											<c:out value="${products.categoryName.categoryid}" />
 										</p>
 										<p class="info">
 											Manufacturer:

@@ -48,39 +48,35 @@
 	<!--Header-->
 	<header> <nav class="navbar navbar-inverse" role="navigation">
 	<div class="navbar-inner">
-		<a class="brand" href="home.jsp">OnlineKart</a> <a
-			class="btn btn-navbar" data-toggle="collapse"
-			data-target=".nav-collapse"> <span class="icon-bar"></span> <span
-			class="icon-bar"></span> <span class="icon-bar"></span>
-		</a>
+		<a class="brand" href="home.jsp">Online Shop</a>
 		<div class="nav-collapse collapse">
 			<ul class="nav pull-right">
 				<li class="dropdown"><a id="cartitem" class="dropdown-toggle"
 					data-toggle="dropdown" href="#"><span id="itemcount"
 						class="btn btn-default btn-sm"><i
-							class="icon-shopping-cart icon-red"></i> <c:set var="cartItems"
-								scope="session" value="${cart.numberOfItems}" /> <span
-							class="headerCartItemsCount"> <c:choose>
-									<c:when test="${empty cartItems}">0
-							</c:when>
+							class="icon-shopping-cart icon-red"></i>
+					<c:set var="cartItems" scope="session" value="${cart.numberOfItems}" />
+					    <span class="headerCartItemsCount">
+							<c:choose>
+									<c:when test="${empty cartItems}">0</c:when>
 									<c:otherwise>
 										<c:out value="${cartItems}" />
 									</c:otherwise>
-								</c:choose>
-						</span> <span class="headerCartItemsCountWord"><c:out
-									value="${cartItems==1?'item':'items'}" /></span> <b class="caret"></b></span></a>
+							</c:choose>
+						</span>
+					<span class="headerCartItemsCountWord">
+						<c:out value="${cartItems==1?'item':'items'}" /></span> <b class="caret"></b></span></a>
 					<ul class="dropdown-menu">
 						<li><a tabindex="-1" href="cart">View Cart</a></li>
 					</ul></li>
 				<li class="dropdown"><c:choose>
 						<c:when test="${empty email}">
-							<a href="login.jsp"><span id="Login"
-                                                      class="btn btn-default btn-sm">Login</span></a>
+							<a href="login.jsp"><span id="Login" class="btn btn-default btn-sm">Login</span></a>
 						</c:when>
 						<c:otherwise>
-							<a class="dropdown-toggle" data-toggle="dropdown" href="#"><span
-								id="welcome" class="btn btn-default btn-sm"><c:out
-										value="Hello ${email}" /><b class="caret"></b></span></a>
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+								<span id="welcome" class="btn btn-default btn-sm">
+									<c:out value="Hello ${email}" /><b class="caret"></b></span></a>
 							<ul class="dropdown-menu">
 								<li><a tabindex="-1" href="/">Account</a></li>
 								<li><a tabindex="-1" href="/">Orders</a></li>
@@ -98,8 +94,8 @@
 	<div class="container">
 		<div class="breadcrumbs">
 			<ul class="breadcrumb">
-				<li class="active"><a href="home.jsp">Home</a> <span
-					class="divider">/</span></li>
+				<li class="active"><a href="home.jsp">Home</a>
+					<span class="divider">/</span></li>
 				<li class="active">Checkout</li>
 			</ul>
 		</div>
@@ -150,7 +146,7 @@
 										</h4>
 										<p class="info">
 											Category:
-											<c:out value="${products.categoryName}" />
+											<c:out value="${products.categoryName.categoryid}" />
 										</p>
 										<p class="info">
 											Manufacturer:
@@ -221,8 +217,8 @@
 							<form action="purchase" method="post">
 								<fieldset>
 									<div class="control-group">
-										<label for="cardType">Select your Card</label> <select
-											id="cardType_SelectedValue" name="cardType.SelectedValue">
+										<label for="cardType">Select your Card</label>
+										<select id="cardType" name="cardType.SelectedValue">
 											<option>Master Card</option>
 											<option>Visa Express</option>
 											<option>American Express</option>
@@ -230,29 +226,28 @@
 										</select>
 									</div>
 									<div class="control-group">
-										<label id="cardnumber" for="cardNumber">Credit Card
+										<label id="cnumber" for="cardNumber">Credit Card
 											Number</label>
 										<div class="controls">
-											<input class="span3" id="cardNumber" name="cardnumber"
+											<input class="span3" id="cardNumber" name="cardNumber"
 												type="text" placeholder="">
 										</div>
 									</div>
 									<div class="control-group">
 										<label id="expire" for="expireDate">Expiry Date</label>
 										<div class="controls">
-											<input type="text" class="input-mini" size="1" maxlength="2"
+											<input type="text" id="expireDate" class="input-mini" size="1" maxlength="2"
 												placeholder="MM"> <span class="divider">/</span> <input
 												type="text" class="input-mini" size="2" maxlength="4"
 												placeholder="YYYY">
 										</div>
-										<label id="expire" for="expireDate">Expiry Date</label>
 										<div class="controls">
 											<input type="text" class="input-mini" maxlength="3"
 												placeholder="CVV" />
 										</div>
 										<div class="controls">
 											<button role="submit" class="btn btn-primary">Purchase</button>
-											<button role="reset" class="btn btn-primray">Reset</button>
+											<a href="home.jsp" class="btn btn-primray">Reset</a>
 										</div>
 									</div>
 								</fieldset>

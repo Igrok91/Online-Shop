@@ -4,7 +4,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>ShoppingKart</title>
 <link href="bootstrap/css/shop-homepae.css" rel="stylesheet" />
 <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
@@ -33,7 +33,7 @@
 	<!--Header-->
 	<header> <nav class="navbar navbar-inverse" role="navigation">
 	<div class="navbar-inner">
-		<a class="brand" href="home.jsp">OnlineKart</a> <a
+		<a class="brand" href="home.jsp">Online Shop</a> <a
 			class="btn btn-navbar" data-toggle="collapse"
 			data-target=".nav-collapse"> <span class="icon-bar"></span> <span
 			class="icon-bar"></span> <span class="icon-bar"></span>
@@ -92,14 +92,14 @@
 							<div class="control-group">
 								<label class="control-label" for="inputEmail">Email</label>
 								<div class="controls">
-									<input class="span3" type="text" name="inputEmail"
+									<input class="span3" type="text" required  name="inputEmail"
 										id="inputEmail" placeholder="E-mail Address">
 								</div>
 							</div>
 							<div class="control-group">
 								<label class="control-label" for="inputPassword">Password</label>
 								<div class="controls">
-									<input type="password" class="span3" name="password"
+									<input type="password" class="span3" required  name="password"
 										id="inputPassword" placeholder="Password">
 								</div>
 							</div>
