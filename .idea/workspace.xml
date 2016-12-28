@@ -2,125 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1de07ef9-661b-4573-b6d9-232399446002" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/ru/innopolis/uni/controller/CartServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/ru/innopolis/uni/controller/CategoryServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/ru/innopolis/uni/controller/CustomerServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/ru/innopolis/uni/controller/HomeServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/ru/innopolis/uni/controller/ProductConfigurationFilter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/ru/innopolis/uni/database/DBConnection.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/ru/innopolis/uni/model/dao/CustomerDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/ru/innopolis/uni/model/dao/ProductDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/ru/innopolis/uni/model/dao/daoException/DataBaseException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/ru/innopolis/uni/model/dao/impl/CustomerDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/ru/innopolis/uni/model/dao/impl/ProductDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/ru/innopolis/uni/model/entityDao/Category.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/ru/innopolis/uni/model/entityDao/Order.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/ru/innopolis/uni/model/entityDao/Product.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/ru/innopolis/uni/model/entityDao/SubCategory.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/ru/innopolis/uni/model/entityDao/User.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/ru/innopolis/uni/model/service/CustomerService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/ru/innopolis/uni/model/service/ProductService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/ru/innopolis/uni/model/service/cart/ShoppingCart.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/ru/innopolis/uni/model/service/cart/ShoppingCartItem.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/test/ru/innopolis/uni/model/dao/impl/ProductDaoImplTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/online_shop-1.0-SNAPSHOT.war/META-INF/MANIFEST.MF" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/online_shop-1.0-SNAPSHOT.war/WEB-INF/classes/log4j.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/online_shop-1.0-SNAPSHOT.war/WEB-INF/classes/ru/innopolis/uni/controller/CartServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/online_shop-1.0-SNAPSHOT.war/WEB-INF/classes/ru/innopolis/uni/controller/CategoryServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/online_shop-1.0-SNAPSHOT.war/WEB-INF/classes/ru/innopolis/uni/controller/CustomerServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/online_shop-1.0-SNAPSHOT.war/WEB-INF/classes/ru/innopolis/uni/controller/HomeServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/online_shop-1.0-SNAPSHOT.war/WEB-INF/classes/ru/innopolis/uni/controller/ProductConfigurationFilter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/online_shop-1.0-SNAPSHOT.war/WEB-INF/classes/ru/innopolis/uni/database/DBConnection.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/online_shop-1.0-SNAPSHOT.war/WEB-INF/classes/ru/innopolis/uni/model/dao/CustomerDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/online_shop-1.0-SNAPSHOT.war/WEB-INF/classes/ru/innopolis/uni/model/dao/ProductDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/online_shop-1.0-SNAPSHOT.war/WEB-INF/classes/ru/innopolis/uni/model/dao/daoException/DataBaseException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/online_shop-1.0-SNAPSHOT.war/WEB-INF/classes/ru/innopolis/uni/model/dao/impl/CustomerDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/online_shop-1.0-SNAPSHOT.war/WEB-INF/classes/ru/innopolis/uni/model/dao/impl/ProductDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/online_shop-1.0-SNAPSHOT.war/WEB-INF/classes/ru/innopolis/uni/model/entityDao/Category.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/online_shop-1.0-SNAPSHOT.war/WEB-INF/classes/ru/innopolis/uni/model/entityDao/Order.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/online_shop-1.0-SNAPSHOT.war/WEB-INF/classes/ru/innopolis/uni/model/entityDao/Product.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/online_shop-1.0-SNAPSHOT.war/WEB-INF/classes/ru/innopolis/uni/model/entityDao/SubCategory.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/online_shop-1.0-SNAPSHOT.war/WEB-INF/classes/ru/innopolis/uni/model/entityDao/User.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/online_shop-1.0-SNAPSHOT.war/WEB-INF/classes/ru/innopolis/uni/model/service/CustomerService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/online_shop-1.0-SNAPSHOT.war/WEB-INF/classes/ru/innopolis/uni/model/service/ProductService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/online_shop-1.0-SNAPSHOT.war/WEB-INF/classes/ru/innopolis/uni/model/service/cart/ShoppingCart.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/online_shop-1.0-SNAPSHOT.war/WEB-INF/classes/ru/innopolis/uni/model/service/cart/ShoppingCartItem.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/online_shop-1.0-SNAPSHOT.war/WEB-INF/lib/commons-codec-1.9.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/online_shop-1.0-SNAPSHOT.war/WEB-INF/lib/javax.servlet-api-3.1.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/online_shop-1.0-SNAPSHOT.war/WEB-INF/lib/jsoup-1.10.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/online_shop-1.0-SNAPSHOT.war/WEB-INF/lib/jsp-api-2.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/online_shop-1.0-SNAPSHOT.war/WEB-INF/lib/jstl-1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/online_shop-1.0-SNAPSHOT.war/WEB-INF/lib/log4j-1.2.17.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/online_shop-1.0-SNAPSHOT.war/WEB-INF/lib/mockito-all-1.9.5.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/online_shop-1.0-SNAPSHOT.war/WEB-INF/lib/mysql-connector-java-6.0.5.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/online_shop-1.0-SNAPSHOT.war/WEB-INF/lib/slf4j-api-1.7.21.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/online_shop-1.0-SNAPSHOT.war/WEB-INF/lib/slf4j-log4j12-1.7.21.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/online_shop-1.0-SNAPSHOT.war/WEB-INF/web.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/online_shop-1.0-SNAPSHOT.war/bootstrap/css/bootstrap-responsive.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/online_shop-1.0-SNAPSHOT.war/bootstrap/css/bootstrap-responsive.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/online_shop-1.0-SNAPSHOT.war/bootstrap/css/bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/online_shop-1.0-SNAPSHOT.war/bootstrap/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/online_shop-1.0-SNAPSHOT.war/bootstrap/css/shop-homepage.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/online_shop-1.0-SNAPSHOT.war/bootstrap/img/glyphicons-halflings-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/online_shop-1.0-SNAPSHOT.war/bootstrap/img/glyphicons-halflings.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/online_shop-1.0-SNAPSHOT.war/bootstrap/js/bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/online_shop-1.0-SNAPSHOT.war/bootstrap/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/online_shop-1.0-SNAPSHOT.war/bootstrap/scripts/jquery-1.7.1.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/online_shop-1.0-SNAPSHOT.war/cart.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/online_shop-1.0-SNAPSHOT.war/category.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/online_shop-1.0-SNAPSHOT.war/checkout_unreg.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/online_shop-1.0-SNAPSHOT.war/error.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/online_shop-1.0-SNAPSHOT.war/final_checkout.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/online_shop-1.0-SNAPSHOT.war/home.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/online_shop-1.0-SNAPSHOT.war/images/AEx.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/online_shop-1.0-SNAPSHOT.war/images/bag_icon.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/online_shop-1.0-SNAPSHOT.war/images/cart.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/online_shop-1.0-SNAPSHOT.war/images/discover.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/online_shop-1.0-SNAPSHOT.war/images/home.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/online_shop-1.0-SNAPSHOT.war/images/mastercard.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/online_shop-1.0-SNAPSHOT.war/images/payment.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/online_shop-1.0-SNAPSHOT.war/images/paypal.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/online_shop-1.0-SNAPSHOT.war/images/product.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/online_shop-1.0-SNAPSHOT.war/images/visa.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/online_shop-1.0-SNAPSHOT.war/login-register.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/online_shop-1.0-SNAPSHOT.war/login.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/online_shop-1.0-SNAPSHOT.war/orderconfirm.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/online_shop-1.0-SNAPSHOT.war/product.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/online_shop-1.0-SNAPSHOT.war" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ru.innopolis.uni.model.dao.impl.ProductDaoImplTest.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/ru.innopolis.uni.model.dao.impl.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/resources/main/log4j.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ru.innopolis.uni.model.dao.impl.ProductDaoImplTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tmp/war/MANIFEST.MF" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/cache.properties.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/Gradle___order_products___online_shop_1_0_SNAPSHOT_war__exploded_.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/Gradle___order_products___online_shop_1_0_SNAPSHOT_war__exploded_.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/innopolis/uni/controller/HomeServlet.java" afterPath="$PROJECT_DIR$/src/main/java/ru/innopolis/uni/controller/HomeServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/innopolis/uni/database/DBConnection.java" afterPath="$PROJECT_DIR$/src/main/java/ru/innopolis/uni/database/DBConnection.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/dao/CustomerDao.java" afterPath="$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/dao/CustomerDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/dao/ProductDao.java" afterPath="$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/dao/ProductDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/dao/daoException/DataBaseException.java" afterPath="$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/dao/daoException/DataBaseException.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/dao/impl/CustomerDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/dao/impl/CustomerDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/dao/impl/ProductDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/dao/impl/ProductDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/entityDao/Category.java" afterPath="$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/entityDao/Category.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/entityDao/Order.java" afterPath="$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/entityDao/Order.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/entityDao/Product.java" afterPath="$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/entityDao/Product.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/entityDao/SubCategory.java" afterPath="$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/entityDao/SubCategory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/entityDao/User.java" afterPath="$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/entityDao/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/service/CustomerService.java" afterPath="$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/service/CustomerService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/service/ProductService.java" afterPath="$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/service/ProductService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/service/cart/ShoppingCart.java" afterPath="$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/service/cart/ShoppingCart.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/service/cart/ShoppingCartItem.java" afterPath="$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/service/cart/ShoppingCartItem.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -169,7 +51,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="HomeServlet.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="HomeServlet.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/controller/HomeServlet.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
@@ -177,68 +59,6 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="log4j.properties" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="29" lean-forward="false" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="17" column="55" lean-forward="false" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Order.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/entityDao/Order.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="3" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Product.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/entityDao/Product.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="42" lean-forward="false" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ShoppingCart.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/service/cart/ShoppingCart.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="42" lean-forward="false" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="42" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CustomerService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/service/CustomerService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="22" column="5" lean-forward="false" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -650,6 +470,36 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="online_shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="online_shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="impl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -688,6 +538,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="online_shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="online_shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1266,12 +1138,12 @@
       <workItem from="1482823795148" duration="242000" />
       <workItem from="1482854183128" duration="8690000" />
       <workItem from="1482901599982" duration="11347000" />
-      <workItem from="1482935894170" duration="10011000" />
+      <workItem from="1482935894170" duration="10710000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77641000" />
+    <option name="totallyTimeSpent" value="78340000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1370" height="735" extended-state="0" />
@@ -1297,9 +1169,9 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28508124" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28508124" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20679468" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1444,16 +1316,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/innopolis/uni/model/dao/impl/ProductDaoImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
-          <caret line="66" column="27" lean-forward="false" selection-start-line="66" selection-start-column="27" selection-end-line="66" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/dao/package-info.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1530,8 +1392,8 @@
         <state relative-caret-position="187">
           <caret line="68" column="7" lean-forward="false" selection-start-line="62" selection-start-column="4" selection-end-line="68" selection-end-column="7" />
           <folding>
-            <marker date="1482946582921" expanded="true" signature="1111:1156" ph="insert into user... " />
-            <marker date="1482946582921" expanded="true" signature="2272:2324" ph="select iduse... user" />
+            <marker date="1482947930505" expanded="true" signature="1111:1156" ph="insert into user... " />
+            <marker date="1482947930505" expanded="true" signature="2272:2324" ph="select iduse... user" />
           </folding>
         </state>
       </provider>
@@ -1549,13 +1411,13 @@
         <state relative-caret-position="204">
           <caret line="326" column="7" lean-forward="false" selection-start-line="320" selection-start-column="3" selection-end-line="326" selection-end-column="7" />
           <folding>
-            <marker date="1482946583002" expanded="true" signature="1335:1357" ph="select * fro... products" />
-            <marker date="1482946583002" expanded="true" signature="3048:3189" ph="select produ... products" />
-            <marker date="1482946583002" expanded="true" signature="4658:4706" ph="select idcat... category" />
-            <marker date="1482946583002" expanded="true" signature="5995:6071" ph="SELECT idsub... subcategory" />
-            <marker date="1482946583002" expanded="true" signature="7495:7637" ph="select idpro... products" />
-            <marker date="1482946583002" expanded="true" signature="9095:9238" ph="select idpro... products" />
-            <marker date="1482946583002" expanded="true" signature="10645:10704" ph="select categ... subcategory" />
+            <marker date="1482947930526" expanded="true" signature="1335:1357" ph="select * fro... products" />
+            <marker date="1482947930526" expanded="true" signature="3048:3189" ph="select produ... products" />
+            <marker date="1482947930526" expanded="true" signature="4658:4706" ph="select idcat... category" />
+            <marker date="1482947930526" expanded="true" signature="5995:6071" ph="SELECT idsub... subcategory" />
+            <marker date="1482947930526" expanded="true" signature="7495:7637" ph="select idpro... products" />
+            <marker date="1482947930526" expanded="true" signature="9095:9238" ph="select idpro... products" />
+            <marker date="1482947930526" expanded="true" signature="10645:10704" ph="select categ... subcategory" />
           </folding>
         </state>
       </provider>
@@ -1682,13 +1544,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/controller/HomeServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/innopolis/uni/model/dao/impl/ProductDaoImplTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="30" column="48" lean-forward="false" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="918">
+          <caret line="66" column="27" lean-forward="false" selection-start-line="66" selection-start-column="27" selection-end-line="66" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1697,6 +1557,16 @@
         <state relative-caret-position="323">
           <caret line="19" column="29" lean-forward="false" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/controller/HomeServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="30" column="48" lean-forward="false" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
