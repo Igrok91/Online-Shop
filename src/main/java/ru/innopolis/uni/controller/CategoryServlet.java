@@ -1,7 +1,7 @@
 package ru.innopolis.uni.controller;
 
 import ru.innopolis.uni.model.entityDao.Product;
-import ru.innopolis.uni.model.service.Service;
+import ru.innopolis.uni.model.service.ProductService;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -15,14 +15,14 @@ import java.util.List;
 /**
  * Created by IgorRyabtsev on 28.12.2016.
  */
-public class ProductServlet extends HttpServlet {
+public class CategoryServlet extends HttpServlet {
     private HttpSession hs;
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String userPath = req.getServletPath();
         String getURL = "/" + userPath + ".jsp";
-        Service service = new Service();
+        ProductService service = new ProductService();
 
         //  Если пользователь запрашивает поиск категории
         if (userPath.equals("/category")) {

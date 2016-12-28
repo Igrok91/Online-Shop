@@ -1,7 +1,8 @@
 package ru.innopolis.uni.controller;
 
 import ru.innopolis.uni.model.entityDao.Product;
-import ru.innopolis.uni.model.service.Service;
+import ru.innopolis.uni.model.service.CustomerService;
+import ru.innopolis.uni.model.service.ProductService;
 import ru.innopolis.uni.model.service.ShoppingCart;
 
 import javax.servlet.RequestDispatcher;
@@ -22,7 +23,6 @@ public class CustomerServlet extends HttpServlet {
 
         String userPath = req.getServletPath();
         String getURL = "/" + userPath + ".jsp";
-        Service service = new Service();
         if (userPath.equals("/checkout")) {
             hs = req.getSession();
             ShoppingCart cart = (ShoppingCart) hs.getAttribute("cart");
@@ -48,7 +48,7 @@ public class CustomerServlet extends HttpServlet {
                           HttpServletResponse response) throws ServletException, IOException {
         String userPath = request.getServletPath();
         String postURL = "/" + userPath + ".jsp";
-        Service service = new Service();
+        ProductService service = new ProductService();
 
         // Если пользователь добавляет продукт в корзину
         if (userPath.equals("/addProducts")) {
@@ -98,9 +98,10 @@ public class CustomerServlet extends HttpServlet {
         }
         // If user registers
         else if (userPath.equals("/register")) {
+            CustomerService customerService = new CustomerService();
             String email = request.getParameter("inputEmail");
             String password = request.getParameter("password");
-            boolean success = service.registerCustomer(email, password);
+            boolean success = customerService.registerCustomer(email, password);
             System.out.println(success);
 
             if (success) {
@@ -114,10 +115,11 @@ public class CustomerServlet extends HttpServlet {
         }
         // If user logs in
         else if (userPath.equals("/login")) {
+            CustomerService customerService = new CustomerService();
             String email = request.getParameter("inputEmail");
             String password = request.getParameter("password");
 
-            boolean flag = service.verifyUser(email, password);
+            boolean flag = customerService.verifyUser(email, password);
             if (flag) {
                 HttpSession hs = request.getSession();
                 hs.setAttribute("email", email);

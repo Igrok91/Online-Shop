@@ -1,7 +1,7 @@
 package ru.innopolis.uni.controller;
 
 import ru.innopolis.uni.model.entityDao.Product;
-import ru.innopolis.uni.model.service.Service;
+import ru.innopolis.uni.model.service.ProductService;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -20,10 +20,9 @@ public class HomeServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
+        ProductService service = new ProductService();
         String userPath = req.getServletPath();
         String getURL = "/" + userPath + ".jsp";
-        Service service = new Service();
         if (userPath.equals("/home")) {
             List<Product> productsList = service.getAllProducts();
             getServletContext().setAttribute("productsList", productsList);
