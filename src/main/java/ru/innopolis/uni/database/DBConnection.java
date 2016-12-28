@@ -26,7 +26,7 @@ public class DBConnection {
         }
     }
 
-    // Static Factory Method
+
     public static Connection getConnecton() {
         if (conn != null) {
             return conn;

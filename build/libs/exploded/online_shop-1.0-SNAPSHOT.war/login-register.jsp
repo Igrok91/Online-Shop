@@ -92,14 +92,14 @@
 							<div class="control-group">
 								<label class="control-label" for="inputEmail">Email</label>
 								<div class="controls">
-									<input class="span3" type="text" required placeholder="Введите Email" name="inputEmail"
+									<input class="span3" type="text" required  name="inputEmail"
 										id="inputEmail" placeholder="E-mail Address">
 								</div>
 							</div>
 							<div class="control-group">
 								<label class="control-label" for="inputPassword">Password</label>
 								<div class="controls">
-									<input type="password" class="span3" required placeholder="Введите Password" name="password"
+									<input type="password" class="span3" required  name="password"
 										id="inputPassword" placeholder="Password">
 								</div>
 							</div>

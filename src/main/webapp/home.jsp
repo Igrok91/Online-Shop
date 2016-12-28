@@ -4,7 +4,7 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>OnlineShop</title>
+	<title>Online Shop</title>
 	<link href="bootstrap/css/shop-homepae.css" rel="stylesheet" />
 	<link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
 	<link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet" />
@@ -44,8 +44,8 @@
 									<c:param name="subcat" value="${subcategories.categoryid}" />
 									<c:param name="categ" value="${categories.key}" />
 								</c:url>
-								<li><a tabindex="-1" href="${url}"><c:out
-										value="${subcategories.productCategory}" /></a></li>
+								<li><a tabindex="-1" href="${url}">
+									<c:out value="${subcategories.productCategory}" /></a></li>
 							</c:forEach>
 						</ul></li>
 				</c:forEach>

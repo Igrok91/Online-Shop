@@ -28,22 +28,18 @@ public class DispatcherServlet extends HttpServlet {
         String getURL = "/" + userPath + ".jsp";
         Service service = new Service();
 
-        // If user requested category page
+        //  Если пользователь запрашивает поиск категории
         if (userPath.equals("/category")) {
             String subCategory = request.getParameter("subcat");
             String categoryName = request.getParameter("categ");
             System.out.println(subCategory);
             System.out.println(categoryName);
-            // If the user requested only products
-            // of specific category
             if (categoryName != null) {
                 List<Product> productsCategoryList = service.getProductByCategory(categoryName);
                 request.setAttribute("productByCategory", productsCategoryList);
-
             }
 
-            // If the user requested only products
-            // of specific subcategory
+            // Если пользователь запрашивает поиск в подкатегории
             if (subCategory != null) {
                 List<Product> categoryProducts = service
                         .getProductBySubCategory(subCategory);
@@ -57,9 +53,8 @@ public class DispatcherServlet extends HttpServlet {
 
             getServletContext().setAttribute("subCat", subCategory);
         }
-        // If user requested cart page
+        // Если пользователь запрашивает корзину
         else if (userPath.equals("/cart")) {
-            // Retrieve all the items available in the cart
             hs = request.getSession();
             ShoppingCart cart = (ShoppingCart) hs.getAttribute("cart");
             RequestDispatcher rd = getServletContext().getRequestDispatcher(
@@ -67,7 +62,7 @@ public class DispatcherServlet extends HttpServlet {
             rd.forward(request, response);
             return;
         }
-        // If user requested checkout page
+        // Если пользователь запрашивает
         else if (userPath.equals("/checkout")) {
             hs = request.getSession();
             ShoppingCart cart = (ShoppingCart) hs.getAttribute("cart");
@@ -76,13 +71,13 @@ public class DispatcherServlet extends HttpServlet {
             rd.forward(request, response);
             return;
         }
-        // If user request home page
+        // Если пользователь запрашивает домашнюю страницу
         else if (userPath.equals("/home")) {
             List<Product> productsList = service.getAllProducts();
             getServletContext().setAttribute("productsList", productsList);
 
         }
-        // If user request product page
+        // Если пользователь запрашивает продукт
         else if (userPath.equals("/product")) {
             int productId = Integer.parseInt(request.getParameter("productId"));
             Product product = (Product) service
@@ -90,13 +85,13 @@ public class DispatcherServlet extends HttpServlet {
             hs = request.getSession();
             hs.setAttribute("product", product);
             hs.setAttribute("productID", productId);
-            // Set Product Category and SubCategory in the Context Attribute
+
             getServletContext().setAttribute("productCategory",
                     product.getCategoryName().getCategoryid());
             getServletContext().setAttribute("productSubCategory",
                     product.getSubCategory().getCategoryid());
         }
-        // If user request Logout
+        // Если пользователь запрашивает Logout
         else if (userPath.equals("/logout")){
             request.getSession().invalidate();
             request.getSession().removeAttribute("email");
@@ -106,8 +101,6 @@ public class DispatcherServlet extends HttpServlet {
             return;
         }
 
-        // Forward the request to appropriate
-        // views (JSP's)
         RequestDispatcher rd = getServletContext().getRequestDispatcher(getURL);
         rd.forward(request, response);
 
@@ -119,16 +112,14 @@ public class DispatcherServlet extends HttpServlet {
         String postURL = "/" + userPath + ".jsp";
         Service service = new Service();
 
-        // If user request to add products
-        // to shopping cart
+        // Если пользователь добавляет продукт в корзину
         if (userPath.equals("/addProducts")) {
 
-            // Request the Session
+
             HttpSession hs = request.getSession();
             ShoppingCart cart = (ShoppingCart) hs.getAttribute("cart");
 
-            // Checks whether cart is available
-            // If not, then will create a cart object
+
             if (cart == null) {
                 cart = new ShoppingCart();
                 hs.setAttribute("cart", cart);
@@ -137,8 +128,7 @@ public class DispatcherServlet extends HttpServlet {
             int prodID = Integer.parseInt((hs.getAttribute("productID")
                     .toString()));
             Integer productID = new Integer(prodID);
-            // Check whether the product id is not null
-            // If not null then add the product to the cart
+
             if (productID != null) {
                 Product p = service.getProductDetails(productID);
                 cart.add(productID, p);

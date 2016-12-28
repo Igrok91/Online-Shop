@@ -17,13 +17,12 @@ public class ProductConfigurationFilter implements Filter {
 
 	private ServletContext context;
 
-	
-
+	@Override
 	public void init(FilterConfig fConfig) throws ServletException {
 		this.context = fConfig.getServletContext();
 		this.context.log("Configuring Products and Categories");
 	}
-
+	@Override
 	public void doFilter(ServletRequest request, ServletResponse response,
 			FilterChain chain) throws IOException, ServletException {
 
@@ -40,13 +39,12 @@ public class ProductConfigurationFilter implements Filter {
 		}
 
 		this.context.setAttribute("categories", hashMap);
-//		this.context.setAttribute("subcategory", subCategories);
 		
 
 		// pass the request along the filter chain
 		chain.doFilter(request, response);
 	}
-
+	@Override
 	public void destroy() {
 	}
 
