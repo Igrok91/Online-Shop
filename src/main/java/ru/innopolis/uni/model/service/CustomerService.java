@@ -7,7 +7,8 @@ import ru.innopolis.uni.model.dao.daoException.DataBaseException;
 import ru.innopolis.uni.model.dao.impl.CustomerDaoImpl;
 
 /**
- * Created by innopolis on 28.12.2016.
+ * Created by Igor Ryabtsev on 28.12.2016.
+ * Класс определят сервис для получения данных из БД и вычисления Бизнес логики
  */
 public class CustomerService implements CustomerDao {
     private CustomerDao customerDao;

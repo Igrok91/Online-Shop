@@ -9,7 +9,8 @@ import java.util.Iterator;
 import java.util.List;
 
 /**
- * Created by innopolis on 24.12.2016.
+ * Created by Igor Ryabtsev on 28.12.2016.
+ * Класс определяет методы для взаимодействия с покупательской корзиной
  */
 public class ShoppingCart {
     private static HashMap<Integer, ShoppingCartItem> itemsMap = null;
@@ -20,13 +21,26 @@ public class ShoppingCart {
         itemsMap = new HashMap<>();
     }
 
-    // Adds items to the shopping cart
+    //
+
+    /**
+     * Adds items to the shopping cart
+     * @param productID
+     * @param p
+     */
     public synchronized void add(int productID, Product p) {
         ShoppingCartItem newItem = new ShoppingCartItem(p);
         itemsMap.put(productID, newItem);
     }
 
-    // Update items in the shopping cart
+    //
+
+    /**
+     * Update items in the shopping cart
+     * @param productID
+     * @param quantity
+     * @param p
+     */
     public synchronized void updateQuantity(int productID, int quantity,
                                             Product p) {
         if (itemsMap.containsKey(productID)) {
@@ -36,7 +50,12 @@ public class ShoppingCart {
         }
     }
 
-    // Remove items from the shopping cart
+    //
+
+    /**
+     * Remove items from the shopping cart
+     * @param productID
+     */
     public synchronized  void remove(Integer productID) {
         if (itemsMap.containsKey(productID)) {
             ShoppingCartItem scItem = itemsMap.get(productID);
@@ -48,20 +67,34 @@ public class ShoppingCart {
         }
     }
 
-    // Clear all items in the shopping cart
+    //
+
+    /**
+     * Clear all items in the shopping cart
+     */
     public synchronized void clear() {
         itemsMap.clear();
         numberOfItems = 0;
     }
 
-    // Get All the Items in the Shopping Cart
+    //
+
+    /**
+     * Get All the Items in the Shopping Cart
+     * @return
+     */
     public synchronized List<ShoppingCartItem> getItems() {
         List<ShoppingCartItem> listOfItems = new ArrayList<>();
         listOfItems.addAll(this.itemsMap.values());
         return listOfItems;
     }
 
-    // Get Number of Items in the Shopping Cart
+    //
+
+    /**
+     * Get Number of Items in the Shopping Cart
+     * @return
+     */
     public synchronized int getNumberOfItems() {
         numberOfItems = 0;
         Iterator<ShoppingCartItem> iterator = getItems().iterator();
@@ -74,7 +107,12 @@ public class ShoppingCart {
         return numberOfItems;
     }
 
-    // Get the Total Value of the Shopping Cart
+    //
+
+    /**
+     * Get the Total Value of the Shopping Cart
+     * @return
+     */
     public synchronized double getTotal() {
 
         double amount = 0.0;
@@ -89,8 +127,13 @@ public class ShoppingCart {
         return amount;
     }
 
-    // Checks whether a particular product
-    // is already present in the cart
+
+    /**
+     * Checks whether a particular product
+     * is already present in the cart
+     * @param pageContext
+     * @return
+     */
     public static Boolean checkProductInCart(PageContext pageContext) {
         int productID = (int) pageContext.findAttribute("productID");
         if (itemsMap == null)

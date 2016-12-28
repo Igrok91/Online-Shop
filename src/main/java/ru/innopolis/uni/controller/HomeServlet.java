@@ -25,10 +25,12 @@ public class HomeServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
         ProductService service = new ProductService();
         String userPath = req.getServletPath();
         String getURL = "/" + userPath + ".jsp";
         if (userPath.equals("/home")) {
+            log.info("Запрос домашней страницы");
             List<Product> productsList = null;
             try {
                 productsList = service.getAllProducts();

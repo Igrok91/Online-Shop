@@ -3,7 +3,8 @@ package ru.innopolis.uni.model.service.cart;
 import ru.innopolis.uni.model.entityDao.Product;
 
 /**
- * Created by innopolis on 24.12.2016.
+ * Created by Igor Ryabtsev on 28.12.2016.
+ * Класс представляет элемент покупательской корзины
  */
 public class ShoppingCartItem {
     private Product product;
@@ -14,14 +15,20 @@ public class ShoppingCartItem {
         quantity = 1;
     }
 
-    // Method to increase the quantity
-    // of the product in the cart
+
+    /**
+     * Method to increase the quantity
+     * of the product in the cart
+     */
     public void incrementQuantity() {
         quantity++;
     }
 
-    // Method to decrease the quantity
-    // of the product in the cart
+
+    /**
+     * Method to decrease the quantity
+     * of the product in the cart
+     */
     public void decrementQuantity() {
         --quantity;
     }

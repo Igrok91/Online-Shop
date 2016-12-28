@@ -1,5 +1,7 @@
 package ru.innopolis.uni.model.dao.impl;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import ru.innopolis.uni.database.DBConnection;
 import ru.innopolis.uni.model.dao.ProductDao;
 import ru.innopolis.uni.model.dao.daoException.DataBaseException;
@@ -12,15 +14,24 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by innopolis on 24.12.2016.
+ * Created by Igor Ryabtsev on 28.12.2016.
+ * Класс, определяющий методы для получения данных из БД, о
+ * пределяющие содержимое пользовательского интерфейса
  */
 public class ProductDaoImpl implements ProductDao {
+    private static Logger log = LoggerFactory.getLogger(ProductDaoImpl.class);
     private List<Product> products = null;
     private List<Category> categories = null;
     private List<SubCategory> subCategories = null;
     private String categoryName;
 
-    // Method to get all products available
+
+
+    /**
+     *   Method to get all products available
+     * @return List of product
+     * @throws DataBaseException
+     */
     @Override
     public List<Product> getAllProducts()  throws DataBaseException {
         Connection conn = null;
@@ -48,7 +59,8 @@ public class ProductDaoImpl implements ProductDao {
             }
 
         } catch (Exception e) {
-            e.printStackTrace();
+            log.warn(e.getMessage());
+            throw new DataBaseException();
         } finally {
 
                 try {
@@ -59,13 +71,20 @@ public class ProductDaoImpl implements ProductDao {
                         ps.close();
                     }
                 } catch (SQLException e) {
-                    e.printStackTrace();
+                    log.warn(e.getMessage());
                 }
             }
         return products;
     }
 
-    // Method to get the required Product Details
+
+
+    /**
+     *  Method to get the required Product Details
+     * @param idproduct
+     * @return Product
+     * @throws DataBaseException
+     */
     @Override
     public Product getProductDetails(int idproduct)  throws DataBaseException {
         Connection conn = null;
@@ -86,8 +105,6 @@ public class ProductDaoImpl implements ProductDao {
             while (rs.next()) {
                 cat.setCategoryid(rs.getInt(4));
                 sub.setCategoryid(rs.getInt(5));
-               // cat.setProductCategory(rs.getString(4));
-              //  sub.setProductCategory(rs.getString(5));
                 p.setProductId(idproduct);
                 p.setProductName(rs.getString(1));
                 p.setProductPrice(rs.getDouble(2));
@@ -97,7 +114,8 @@ public class ProductDaoImpl implements ProductDao {
                 p.setProductManufacturer(rs.getString(6));
             }
         } catch (Exception e) {
-            e.printStackTrace();
+            log.warn(e.getMessage());
+            throw new DataBaseException();
         } finally {
             try {
                 if (rs != null ) {
@@ -107,14 +125,20 @@ public class ProductDaoImpl implements ProductDao {
                     ps.close();
                 }
             } catch (SQLException e) {
-                e.printStackTrace();
+                log.warn(e.getMessage());
             }
 
         }
         return p;
     }
 
-    // Method to get all the available Categories
+    //
+
+    /**
+     * Method to get all the available Categories
+     * @return List of category
+     * @throws DataBaseException
+     */
     @Override
     public List<Category> getAllCategories()  throws DataBaseException {
         Connection conn = null;
@@ -134,7 +158,8 @@ public class ProductDaoImpl implements ProductDao {
                 categories.add(c);
             }
         } catch (Exception e) {
-            e.printStackTrace();
+            log.warn(e.getMessage());
+            throw new DataBaseException();
         } finally {
             try {
                 if (rs != null ) {
@@ -144,13 +169,20 @@ public class ProductDaoImpl implements ProductDao {
                     ps.close();
                 }
             } catch (SQLException e) {
-                e.printStackTrace();
+                log.warn(e.getMessage());
             }
         }
         return categories;
     }
 
-    // Method to get all the available Subcategories under a Category
+    //
+
+    /**
+     * Method to get all the available Subcategories under a Category
+     * @param category
+     * @return List of subcategory
+     * @throws DataBaseException
+     */
     @Override
     public List<SubCategory> getSubCategory(Category category) throws DataBaseException  {
         Connection conn = null;
@@ -173,7 +205,8 @@ public class ProductDaoImpl implements ProductDao {
                 subCategories.add(subCategory);
             }
         } catch (Exception e) {
-            e.printStackTrace();
+            log.warn(e.getMessage());
+            throw new DataBaseException();
         } finally {
 
             try {
@@ -184,13 +217,20 @@ public class ProductDaoImpl implements ProductDao {
                     ps.close();
                 }
             } catch (SQLException e) {
-                e.printStackTrace();
+                log.warn(e.getMessage());
             }
         }
         return subCategories;
     }
 
-    // Method to get all the Products based on specified SubCategory
+    //
+
+    /**
+     * Method to get all the Products based on specified SubCategory
+     * @param subCategory
+     * @return
+     * @throws DataBaseException
+     */
     @Override
     public List<Product> getProductBySubCategory(String subCategory)   throws DataBaseException{
         Connection conn = null;
@@ -214,7 +254,8 @@ public class ProductDaoImpl implements ProductDao {
                 products.add(p);
             }
         } catch (Exception e) {
-            e.printStackTrace();
+            log.warn(e.getMessage());
+            throw new DataBaseException();
         } finally {
 
             try {
@@ -225,11 +266,18 @@ public class ProductDaoImpl implements ProductDao {
                     ps.close();
                 }
             } catch (SQLException e) {
-                e.printStackTrace();
+                log.warn(e.getMessage());
             }
         }
         return products;
     }
+
+    /**
+     * Method to get all the Products based on specified Category
+     * @param category
+     * @return
+     * @throws DataBaseException
+     */
     @Override
     public List<Product> getProductByCategory(String category)  throws DataBaseException {
         Connection conn = null;
@@ -253,13 +301,14 @@ public class ProductDaoImpl implements ProductDao {
                 products.add(p);
             }
         } catch (Exception e) {
-            e.printStackTrace();
+            log.warn(e.getMessage());
+            throw new DataBaseException();
         } finally {
                 if (rs != null) {
                     try {
                         rs.close();
                     } catch (SQLException e) {
-                        e.printStackTrace();
+                        log.warn(e.getMessage());
                     }
                 }
         }
@@ -268,8 +317,14 @@ public class ProductDaoImpl implements ProductDao {
 
 
 
-    // Method to get Product Category
-    // based on Sub Category
+
+    /**
+     * Method to get Product Category
+     * based on Sub Category
+     * @param subCategory
+     * @return Name of Category
+     * @throws DataBaseException
+     */
     @Override
     public String getCategoryBySubCategory(String subCategory)  throws DataBaseException{
         Connection conn = null;
@@ -286,14 +341,15 @@ public class ProductDaoImpl implements ProductDao {
                 categoryName = rs.getString("category_id");
             }
         } catch (Exception e) {
-            e.printStackTrace();
+            log.warn(e.getMessage());
+            throw new DataBaseException();
         } finally {
             try {
                 if (rs != null) {
                     rs.close();
                 }
             } catch (Exception e) {
-                e.printStackTrace();
+                log.warn(e.getMessage());
             }
 
         }

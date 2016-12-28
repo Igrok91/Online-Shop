@@ -1,7 +1,8 @@
 package ru.innopolis.uni.model.entityDao;
 
 /**
- * Created by innopolis on 24.12.2016.
+ * Created by Igor Ryabtsev on 28.12.2016.
+ * Класс определяет сущность из БД
  */
 public class User {
     private int userId;

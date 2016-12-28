@@ -1,5 +1,7 @@
 package ru.innopolis.uni.model.dao.impl;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import ru.innopolis.uni.database.DBConnection;
 import ru.innopolis.uni.model.dao.CustomerDao;
 import ru.innopolis.uni.model.dao.daoException.DataBaseException;
@@ -10,12 +12,20 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 /**
- * Created by innopolis on 24.12.2016.
+ * Created by Igor Ryabtsev on 28.12.2016.
+ * Класс, определяющий основные методы для взаимодействия с базой данных
  */
 public class CustomerDaoImpl implements CustomerDao {
+    private static Logger log = LoggerFactory.getLogger(CustomerDaoImpl.class);
     private Connection conn;
 
-    // This method is used to register customer
+    /**\
+     *
+     * @param email Данные пользователя
+     * @param password  Данные пользователя
+     * @return <tt>true</tt> Если данные пользователя помещены в БД
+     * @throws DataBaseException
+     */
     @Override
     public boolean registerCustomer(String email, String password) throws DataBaseException{
         PreparedStatement ps = null;
@@ -34,13 +44,14 @@ public class CustomerDaoImpl implements CustomerDao {
                 return true;
             }
         } catch (Exception e) {
-            e.printStackTrace();
+            log.warn(e.getMessage());
+            throw new DataBaseException();
         } finally {
             if (ps != null) {
                 try {
                     ps.close();
                 } catch (SQLException e) {
-                    e.printStackTrace();
+                    log.warn(e.getMessage());
                 }
             }
 
@@ -48,8 +59,14 @@ public class CustomerDaoImpl implements CustomerDao {
         return false;
     }
 
-    // This method is used to verify if the customer is registered
-    // or not
+
+    /**
+     *  This method is used to verify if the customer is registered or not
+     * @param email Данные пользователя
+     * @param password Данные пользователя
+     * @return <tt>true</tt> Если данные пользователя совпадают с значением в БД
+     * @throws DataBaseException
+     */
     @Override
     public boolean verifyUser(String email, String password)  throws DataBaseException{
         conn = DBConnection.getConnecton();
@@ -68,13 +85,14 @@ public class CustomerDaoImpl implements CustomerDao {
                 }
             }
         } catch (Exception e) {
-            e.printStackTrace();
+            log.warn(e.getMessage());
+            throw new DataBaseException();
         } finally {
             if (ps != null) {
                 try {
                     ps.close();
                 } catch (SQLException e) {
-                    e.printStackTrace();
+                    log.warn(e.getMessage());
                 }
             }
 

@@ -29,7 +29,6 @@ public class DBConnection {
         }
     }
 
-
     public static Connection getConnecton() {
         if (conn != null) {
             return conn;

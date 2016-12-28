@@ -10,7 +10,8 @@ import ru.innopolis.uni.model.entityDao.SubCategory;
 import java.util.List;
 
 /**
- * Created by innopolis on 28.12.2016.
+ * Created by Igor Ryabtsev on 28.12.2016.
+ * Класс определят сервис для получения данных из БД и вычисления Бизнес логики
  */
 public class ProductService  implements ProductDao{
     private ProductDao productDao;
