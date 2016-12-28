@@ -1,6 +1,9 @@
 package ru.innopolis.uni.controller;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import ru.innopolis.uni.model.dao.ProductDao;
+import ru.innopolis.uni.model.dao.daoException.DataBaseException;
 import ru.innopolis.uni.model.dao.impl.ProductDaoImpl;
 import ru.innopolis.uni.model.entityDao.Category;
 import ru.innopolis.uni.model.entityDao.SubCategory;
@@ -11,10 +14,11 @@ import java.util.HashMap;
 import java.util.List;
 
 /**
- * Servlet Filter implementation class ProductConfigurationFilter
+ * Created by Igor Ryabtsev on 28.12.2016.
+ * Класс фильтра, который фильтрует подкатегории в соответствии с категориями
  */
 public class ProductConfigurationFilter implements Filter {
-
+	private static Logger log = LoggerFactory.getLogger(ProductConfigurationFilter.class);
 	private ServletContext context;
 
 	@Override
@@ -27,20 +31,27 @@ public class ProductConfigurationFilter implements Filter {
 			FilterChain chain) throws IOException, ServletException {
 
 		 HashMap<String, List<SubCategory>> hashMap=new HashMap<>(1);
-		 
+
 		 ProductDao service = new ProductDaoImpl();
-		 List<Category> categoryList = service.getAllCategories();
-		
+		List<Category> categoryList = null;
+		try {
+			categoryList = service.getAllCategories();
+		} catch (DataBaseException e) {
+			log.warn(e.message());
+		}
+
 		for (Category category : categoryList) {
 
-			hashMap.put(category.getProductCategory(), service.getSubCategory(category));
-		
+			try {
+				hashMap.put(category.getProductCategory(), service.getSubCategory(category));
+			} catch (DataBaseException e) {
+				log.warn(e.message());
+			}
+
 			this.context.log("Category Names available are:"+category.getProductCategory());
 		}
 
 		this.context.setAttribute("categories", hashMap);
-		
-
 		// pass the request along the filter chain
 		chain.doFilter(request, response);
 	}

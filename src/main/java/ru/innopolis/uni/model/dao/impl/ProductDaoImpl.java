@@ -2,6 +2,7 @@ package ru.innopolis.uni.model.dao.impl;
 
 import ru.innopolis.uni.database.DBConnection;
 import ru.innopolis.uni.model.dao.ProductDao;
+import ru.innopolis.uni.model.dao.daoException.DataBaseException;
 import ru.innopolis.uni.model.entityDao.Category;
 import ru.innopolis.uni.model.entityDao.Product;
 import ru.innopolis.uni.model.entityDao.SubCategory;
@@ -21,7 +22,7 @@ public class ProductDaoImpl implements ProductDao {
 
     // Method to get all products available
     @Override
-    public List<Product> getAllProducts() {
+    public List<Product> getAllProducts()  throws DataBaseException {
         Connection conn = null;
         Statement ps = null;
         ResultSet rs = null;
@@ -66,7 +67,7 @@ public class ProductDaoImpl implements ProductDao {
 
     // Method to get the required Product Details
     @Override
-    public Product getProductDetails(int idproduct)  {
+    public Product getProductDetails(int idproduct)  throws DataBaseException {
         Connection conn = null;
         PreparedStatement ps = null;
         ResultSet rs = null;
@@ -115,7 +116,7 @@ public class ProductDaoImpl implements ProductDao {
 
     // Method to get all the available Categories
     @Override
-    public List<Category> getAllCategories()  {
+    public List<Category> getAllCategories()  throws DataBaseException {
         Connection conn = null;
         PreparedStatement ps = null;
         ResultSet rs = null;
@@ -151,7 +152,7 @@ public class ProductDaoImpl implements ProductDao {
 
     // Method to get all the available Subcategories under a Category
     @Override
-    public List<SubCategory> getSubCategory(Category category)  {
+    public List<SubCategory> getSubCategory(Category category) throws DataBaseException  {
         Connection conn = null;
         PreparedStatement ps = null;
         ResultSet rs = null;
@@ -191,7 +192,7 @@ public class ProductDaoImpl implements ProductDao {
 
     // Method to get all the Products based on specified SubCategory
     @Override
-    public List<Product> getProductBySubCategory(String subCategory)  {
+    public List<Product> getProductBySubCategory(String subCategory)   throws DataBaseException{
         Connection conn = null;
         PreparedStatement ps = null;
         ResultSet rs = null;
@@ -230,7 +231,7 @@ public class ProductDaoImpl implements ProductDao {
         return products;
     }
     @Override
-    public List<Product> getProductByCategory(String category)  {
+    public List<Product> getProductByCategory(String category)  throws DataBaseException {
         Connection conn = null;
         PreparedStatement ps = null;
         ResultSet rs = null;
@@ -270,7 +271,7 @@ public class ProductDaoImpl implements ProductDao {
     // Method to get Product Category
     // based on Sub Category
     @Override
-    public String getCategoryBySubCategory(String subCategory) {
+    public String getCategoryBySubCategory(String subCategory)  throws DataBaseException{
         Connection conn = null;
         PreparedStatement ps = null;
         ResultSet rs = null;

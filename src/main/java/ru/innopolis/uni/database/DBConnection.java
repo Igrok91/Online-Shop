@@ -1,17 +1,20 @@
 package ru.innopolis.uni.database;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
 /**
- * Created by innopolis on 24.12.2016.
+ *Created by Igor Ryabtsev on 28.12.2016.
+ * Класс для получения соединения с базой данных
  */
 public class DBConnection {
-
+    private static Logger log = LoggerFactory.getLogger(DBConnection.class);
     public static final String DATABASE_URL = "jdbc:mysql://localhost:3306/online_shop?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
     private static Connection conn;
-
 
     private DBConnection() {
         try {
@@ -20,9 +23,9 @@ public class DBConnection {
                     DATABASE_URL, "root",
                     "Sparta1991");
         } catch (ClassNotFoundException e) {
-            e.printStackTrace();
+            log.warn(e.getMessage());
         } catch (SQLException e) {
-            e.printStackTrace();
+            log.warn(e.getMessage());
         }
     }
 

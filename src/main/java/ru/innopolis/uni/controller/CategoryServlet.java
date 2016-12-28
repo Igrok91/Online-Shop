@@ -1,5 +1,8 @@
 package ru.innopolis.uni.controller;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import ru.innopolis.uni.model.dao.daoException.DataBaseException;
 import ru.innopolis.uni.model.entityDao.Product;
 import ru.innopolis.uni.model.service.ProductService;
 
@@ -14,8 +17,10 @@ import java.util.List;
 
 /**
  * Created by IgorRyabtsev on 28.12.2016.
+ * Класс сервлета регулирует отображение названии категорий продуктов в пользовательском интерфейсе
  */
 public class CategoryServlet extends HttpServlet {
+    private static Logger log = LoggerFactory.getLogger(CategoryServlet.class);
     private HttpSession hs;
 
     @Override
@@ -28,20 +33,28 @@ public class CategoryServlet extends HttpServlet {
         if (userPath.equals("/category")) {
             String subCategory = req.getParameter("subcat");
             String categoryName = req.getParameter("categ");
-            System.out.println(subCategory);
-            System.out.println(categoryName);
             if (categoryName != null) {
-                List<Product> productsCategoryList = service.getProductByCategory(categoryName);
+                List<Product> productsCategoryList = null;
+                try {
+                    productsCategoryList = service.getProductByCategory(categoryName);
+                } catch (DataBaseException e) {
+                    log.warn(e.message());
+                    resp.sendRedirect("error.jsp");
+                }
                 req.setAttribute("productByCategory", productsCategoryList);
             }
 
             // Если пользователь запрашивает поиск в подкатегории
             if (subCategory != null) {
-                List<Product> categoryProducts = service
-                        .getProductBySubCategory(subCategory);
-                System.out.println(categoryProducts);
-                String cat = service
-                        .getCategoryBySubCategory(subCategory);
+                List<Product> categoryProducts = null;
+                String cat = null;
+                try {
+                    categoryProducts = service.getProductBySubCategory(subCategory);
+                    cat = service.getCategoryBySubCategory(subCategory);
+                } catch (DataBaseException e) {
+                    log.warn(e.message());
+                    resp.sendRedirect("error.jsp");
+                }
                 getServletContext().setAttribute("categoryProducts",
                         categoryProducts);
                 getServletContext().setAttribute("cat", cat);
@@ -51,8 +64,13 @@ public class CategoryServlet extends HttpServlet {
         }  // Если пользователь запрашивает продукт
         else if (userPath.equals("/product")) {
             int productId = Integer.parseInt(req.getParameter("productId"));
-            Product product = (Product) service
-                    .getProductDetails(productId);
+            Product product = null;
+            try {
+                product = (Product) service.getProductDetails(productId);
+            } catch (DataBaseException e) {
+                log.warn(e.message());
+                resp.sendRedirect("error.jsp");
+            }
             hs = req.getSession();
             hs.setAttribute("product", product);
             hs.setAttribute("productID", productId);

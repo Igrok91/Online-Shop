@@ -1,5 +1,8 @@
 package ru.innopolis.uni.controller;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import ru.innopolis.uni.model.dao.daoException.DataBaseException;
 import ru.innopolis.uni.model.entityDao.Product;
 import ru.innopolis.uni.model.service.CustomerService;
 import ru.innopolis.uni.model.service.ProductService;
@@ -14,9 +17,12 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 /**
- * Created by innopolis on 28.12.2016.
+ * Created by Igor Ryabtsev on 28.12.2016.
+ * Класс сервлета регулирует основные взаимодействия пользователя с интерфесом,
+ * такие как регистрация, вход, покупка
  */
 public class CustomerServlet extends HttpServlet {
+    private static Logger log = LoggerFactory.getLogger(CustomerServlet.class);
     private HttpSession hs;
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -48,38 +54,47 @@ public class CustomerServlet extends HttpServlet {
                           HttpServletResponse response) throws ServletException, IOException {
         String userPath = request.getServletPath();
         String postURL = "/" + userPath + ".jsp";
-        ProductService service = new ProductService();
-        // If user request to purchase the products
+        // Если пользователь оплачивает продукт
         if (userPath.equals("/purchase")) {
             HttpSession s = request.getSession();
             ShoppingCart cart = (ShoppingCart) s.getAttribute("cart");
             cart.clear();
             response.sendRedirect("orderconfirm.jsp");
         }
-        // If user registers
+        // Если пользователь регистрируется
         else if (userPath.equals("/register")) {
             CustomerService customerService = new CustomerService();
             String email = request.getParameter("inputEmail");
             String password = request.getParameter("password");
-            boolean success = customerService.registerCustomer(email, password);
-            System.out.println(success);
+            boolean success = false;
+            try {
+                success = customerService.registerCustomer(email, password);
+            } catch (DataBaseException e) {
+                log.warn(e.message());
+                response.sendRedirect("error.jsp");
+            }
 
             if (success) {
                 HttpSession hs = request.getSession();
                 hs.setAttribute("regstatus", 1);
-                //request.setAttribute("regstatus", 1);
                 response.sendRedirect("login.jsp?regStatus=Success");
             } else {
                 response.sendRedirect("checkout_unreg.jsp?regStatus=Fail");
             }
         }
-        // If user logs in
+        // Если пользователь входит в систему
         else if (userPath.equals("/login")) {
             CustomerService customerService = new CustomerService();
             String email = request.getParameter("inputEmail");
             String password = request.getParameter("password");
 
-            boolean flag = customerService.verifyUser(email, password);
+            boolean flag = false;
+            try {
+                flag = customerService.verifyUser(email, password);
+            } catch (DataBaseException e) {
+                log.warn(e.message());
+                response.sendRedirect("error.jsp");
+            }
             if (flag) {
                 HttpSession hs = request.getSession();
                 hs.setAttribute("email", email);

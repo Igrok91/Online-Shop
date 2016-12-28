@@ -3,6 +3,7 @@ package ru.innopolis.uni.model.service;
 import org.apache.commons.codec.digest.DigestUtils;
 import ru.innopolis.uni.model.dao.CustomerDao;
 import ru.innopolis.uni.model.dao.ProductDao;
+import ru.innopolis.uni.model.dao.daoException.DataBaseException;
 import ru.innopolis.uni.model.dao.impl.CustomerDaoImpl;
 
 /**
@@ -15,13 +16,13 @@ public class CustomerService implements CustomerDao {
         customerDao = new CustomerDaoImpl();
     }
     @Override
-    public boolean registerCustomer(String email, String password) {
+    public boolean registerCustomer(String email, String password)  throws DataBaseException {
 
         return customerDao.registerCustomer(email, crypt(password));
     }
 
     @Override
-    public boolean verifyUser(String email, String password) {
+    public boolean verifyUser(String email, String password) throws DataBaseException {
         return customerDao.verifyUser(email,crypt(password));
     }
 

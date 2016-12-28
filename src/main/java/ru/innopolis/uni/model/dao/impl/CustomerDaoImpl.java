@@ -2,6 +2,7 @@ package ru.innopolis.uni.model.dao.impl;
 
 import ru.innopolis.uni.database.DBConnection;
 import ru.innopolis.uni.model.dao.CustomerDao;
+import ru.innopolis.uni.model.dao.daoException.DataBaseException;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -16,7 +17,7 @@ public class CustomerDaoImpl implements CustomerDao {
 
     // This method is used to register customer
     @Override
-    public boolean registerCustomer(String email, String password){
+    public boolean registerCustomer(String email, String password) throws DataBaseException{
         PreparedStatement ps = null;
 
         try {
@@ -50,7 +51,7 @@ public class CustomerDaoImpl implements CustomerDao {
     // This method is used to verify if the customer is registered
     // or not
     @Override
-    public boolean verifyUser(String email, String password) {
+    public boolean verifyUser(String email, String password)  throws DataBaseException{
         conn = DBConnection.getConnecton();
         PreparedStatement ps = null;
         String sql = "select iduser from user where email=? AND password=?";
