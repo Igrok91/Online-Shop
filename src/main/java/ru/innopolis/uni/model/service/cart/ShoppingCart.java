@@ -1,4 +1,4 @@
-package ru.innopolis.uni.model.service;
+package ru.innopolis.uni.model.service.cart;
 
 import ru.innopolis.uni.model.entityDao.Product;
 
@@ -40,9 +40,10 @@ public class ShoppingCart {
     public synchronized  void remove(Integer productID) {
         if (itemsMap.containsKey(productID)) {
             ShoppingCartItem scItem = itemsMap.get(productID);
-            if (scItem.getQuantity() <= 1) {
+            System.out.println("Количство" + scItem.getQuantity());
+            //if (scItem.getQuantity() <= 1) {
                 itemsMap.remove(productID);
-            }
+          //  }
             numberOfItems--;
         }
     }

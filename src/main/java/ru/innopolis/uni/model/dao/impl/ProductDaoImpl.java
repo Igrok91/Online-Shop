@@ -6,10 +6,7 @@ import ru.innopolis.uni.model.entityDao.Category;
 import ru.innopolis.uni.model.entityDao.Product;
 import ru.innopolis.uni.model.entityDao.SubCategory;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,7 +23,7 @@ public class ProductDaoImpl implements ProductDao {
     @Override
     public List<Product> getAllProducts() {
         Connection conn = null;
-        PreparedStatement ps = null;
+        Statement ps = null;
         ResultSet rs = null;
         String sql;
         conn = DBConnection.getConnecton();
@@ -34,8 +31,8 @@ public class ProductDaoImpl implements ProductDao {
         products = new ArrayList<Product>();
 
         try {
-            ps = conn.prepareStatement(sql);
-            rs = ps.executeQuery();
+            ps = conn.createStatement();
+            rs = ps.executeQuery(sql);
 
             while (rs.next()) {
                 SubCategory subCategory = new SubCategory();

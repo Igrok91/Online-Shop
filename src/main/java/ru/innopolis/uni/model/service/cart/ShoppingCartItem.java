@@ -1,4 +1,4 @@
-package ru.innopolis.uni.model.service;
+package ru.innopolis.uni.model.service.cart;
 
 import ru.innopolis.uni.model.entityDao.Product;
 

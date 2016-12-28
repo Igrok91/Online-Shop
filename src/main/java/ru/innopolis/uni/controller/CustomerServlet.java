@@ -3,7 +3,7 @@ package ru.innopolis.uni.controller;
 import ru.innopolis.uni.model.entityDao.Product;
 import ru.innopolis.uni.model.service.CustomerService;
 import ru.innopolis.uni.model.service.ProductService;
-import ru.innopolis.uni.model.service.ShoppingCart;
+import ru.innopolis.uni.model.service.cart.ShoppingCart;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -49,48 +49,8 @@ public class CustomerServlet extends HttpServlet {
         String userPath = request.getServletPath();
         String postURL = "/" + userPath + ".jsp";
         ProductService service = new ProductService();
-
-        // Если пользователь добавляет продукт в корзину
-        if (userPath.equals("/addProducts")) {
-
-
-            HttpSession hs = request.getSession();
-            ShoppingCart cart = (ShoppingCart) hs.getAttribute("cart");
-
-
-            if (cart == null) {
-                cart = new ShoppingCart();
-                hs.setAttribute("cart", cart);
-            }
-
-            int prodID = Integer.parseInt((hs.getAttribute("productID")
-                    .toString()));
-            Integer productID = new Integer(prodID);
-
-            if (productID != null) {
-                Product p = service.getProductDetails(productID);
-                cart.add(productID, p);
-                response.sendRedirect("product.jsp");
-            }
-        } else if (userPath.equals("/update")) {
-            String prod_id = request.getParameter("productid");
-            int productid = Integer.parseInt(prod_id);
-            int quantity = Integer.parseInt(request.getParameter("quantity"));
-            System.out.println(prod_id);
-
-            Product product = (Product) service
-                    .getProductDetails(productid);
-            HttpSession s = request.getSession();
-            ShoppingCart cart = (ShoppingCart) s.getAttribute("cart");
-            System.out.println(cart);
-            if (cart != null) {
-                cart.updateQuantity(productid, quantity, product);
-                System.out.println(quantity);
-            }
-            response.sendRedirect("cart.jsp");
-        }
         // If user request to purchase the products
-        else if (userPath.equals("/purchase")) {
+        if (userPath.equals("/purchase")) {
             HttpSession s = request.getSession();
             ShoppingCart cart = (ShoppingCart) s.getAttribute("cart");
             cart.clear();
@@ -129,16 +89,5 @@ public class CustomerServlet extends HttpServlet {
             }
 
         }
-        // If user wants to remove an item from cart
-        else if (userPath.equals("/remove")) {
-            int id = Integer.parseInt(request.getParameter("pid"));
-            ShoppingCart cart = (ShoppingCart) hs.getAttribute("cart");
-
-            if (cart != null) {
-                cart.remove(id);
-                response.sendRedirect("cart.jsp");
-            }
-        }
-
     }
 }

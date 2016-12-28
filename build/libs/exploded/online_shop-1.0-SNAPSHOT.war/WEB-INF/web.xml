@@ -3,6 +3,7 @@
 		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 		 xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
 		 version="3.1">
+
 	<servlet>
 		<servlet-name>HomeServlet</servlet-name>
 		<servlet-class>ru.innopolis.uni.controller.HomeServlet</servlet-class>
@@ -24,6 +25,7 @@
 		<url-pattern>/product</url-pattern>
 	</servlet-mapping>
 
+
 	<servlet>
 		<servlet-name>CustomerServlet</servlet-name>
 		<servlet-class>ru.innopolis.uni.controller.CustomerServlet</servlet-class>
@@ -42,14 +44,6 @@
 	</servlet-mapping>
 	<servlet-mapping>
 		<servlet-name>CustomerServlet</servlet-name>
-		<url-pattern>/addProducts</url-pattern>
-	</servlet-mapping>
-	<servlet-mapping>
-		<servlet-name>CustomerServlet</servlet-name>
-		<url-pattern>/update</url-pattern>
-	</servlet-mapping>
-	<servlet-mapping>
-		<servlet-name>CustomerServlet</servlet-name>
 		<url-pattern>/purchase</url-pattern>
 	</servlet-mapping>
 	<servlet-mapping>
@@ -60,11 +54,24 @@
 		<servlet-name>CustomerServlet</servlet-name>
 		<url-pattern>/login</url-pattern>
 	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>CartServlet</servlet-name>
+		<servlet-class>ru.innopolis.uni.controller.CartServlet</servlet-class>
+	</servlet>
 	<servlet-mapping>
-		<servlet-name>CustomerServlet</servlet-name>
+		<servlet-name>CartServlet</servlet-name>
 		<url-pattern>/remove</url-pattern>
 	</servlet-mapping>
-
+	<servlet-mapping>
+		<servlet-name>CartServlet</servlet-name>
+		<url-pattern>/addProducts</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CartServlet</servlet-name>
+		<url-pattern>/update</url-pattern>
+	</servlet-mapping>
 
 	<filter>
 		<display-name>ProductConfigurationFilter</display-name>

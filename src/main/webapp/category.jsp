@@ -16,7 +16,7 @@
 	<!--Header-->
 	<nav class="navbar navbar-inverse" role="navigation">
 	<div class="navbar-inner">
-		<a class="brand" href="home.jsp">Shopping Shop</a>
+		<a class="brand" href="home.jsp">Online Shop</a>
 
 		<div class="nav-collapse collapse">
 			<ul class="nav">
